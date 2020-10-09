@@ -1,0 +1,16 @@
+Check for Error
+
+Will following statement give an error ?
+
+float f = 1.4;
+
+Options
+1.Yes 
+2.No
+
+Correct Answer: 1.yes
+
+Solution Description
+####System treats all decimal numbers as double by default. 
+So 1.4 is stored as double(which is of 8 bytes). When we will try
+put a double into a float(which is of 4 bytes), it will give you error.
