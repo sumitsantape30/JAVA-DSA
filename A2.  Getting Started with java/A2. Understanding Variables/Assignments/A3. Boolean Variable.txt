@@ -1,0 +1,10 @@
+Which of these values can be assigned to a boolean variable in Java?
+
+a.0 or 1
+b.Any Integer Value
+c.true or false
+d.both options a and c
+
+
+Solution Description
+Boolean variable in java can only hold either true or false value.
