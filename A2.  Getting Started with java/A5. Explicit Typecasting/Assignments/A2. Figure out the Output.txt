@@ -1,0 +1,10 @@
+What will be the output of the following statement ?
+
+System.out.println(‘a’ + 1);
+
+Answer
+98
+
+Solution Description
+####When you add a character and an int, it will add the ASCII
+value of char ‘a’ i.e 97 and int 1. So ans will be 98.
