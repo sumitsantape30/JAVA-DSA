@@ -1,0 +1,21 @@
+Predict the output
+
+public class  Solution {
+    public static void main(String [] args)  {
+        int var1 = 5;
+        int var2 = 6;
+        System.out.print(var1 > var2);
+    }
+}
+
+Options
+true
+false 
+0
+1
+
+Correct Answer: false 
+
+Solution Description
+####> is a logical operator. So it will give the result as true or false only.
+var1 is not greater than var2, hence result is false.
