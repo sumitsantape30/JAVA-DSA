@@ -1,0 +1,27 @@
+Find the output
+
+public static void main(String args[])
+{
+        int x = 5; 
+        if (x < 6)
+            System.out.print(“Hello  ”);
+        if(x == 5){
+            System.out.print(“Hi  ”);
+        }
+        else{ 
+            System.out.print(“Hey ”);
+        } 
+}
+
+Options:
+1.Hello
+2.Hi
+3.Hello Hi 
+4.Hello Hey
+
+Correct Answer: 3.Hello Hi 
+
+Solution Description:
+####As x is equal to 5, it enters in first if condition and prints "Hello".
+After that, second if condition will be checked and that is true again,
+so it will next print "Hi". Else part will be skipped.
