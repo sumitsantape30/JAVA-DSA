@@ -1,0 +1,6 @@
+Valid Triangle
+
+You are given 3 numbers. Each number represents the length of a line. You need to figure out whether these lines can form a valid triangle.
+If a valid triangle can be formed, print "Yes", otherwise print "No".
+Draw a flowchart for this process
+Note : You don't need to submit the problem. Just attempt in your notebook and ask doubts if you need help.
