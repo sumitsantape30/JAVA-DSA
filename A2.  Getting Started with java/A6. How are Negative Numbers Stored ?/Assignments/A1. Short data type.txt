@@ -1,0 +1,12 @@
+Short data type has a minimum value of -
+
+Options
+-2,147,483,648
+-32,768 
+-32,767
+-127
+
+Correct Answer : -32,768 
+
+Solution Description
+####Short is of 16 bits. So the smallest value short can store is : -2^15.
