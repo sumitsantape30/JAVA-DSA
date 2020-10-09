@@ -1,0 +1,2 @@
+Primitive data type 'long' is having size _______ byte(s) in Java Programming.
+Correct Answer: 8
