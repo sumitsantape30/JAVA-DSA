@@ -1,0 +1,5 @@
+All primes
+
+You are given a single positive integer, N. You need to print all prime numbers that occur in the range 1 to N (both inclusive).
+Draw a flowchart for this process
+Note : You don't need to submit the problem. Just attempt in your notebook and ask doubts if you need help.
