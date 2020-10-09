@@ -1,0 +1,13 @@
+Which of these is a valid variable name ?
+
+a.1var
+b.var1
+c.var@1
+d.2_var
+
+Correct Answer : b.var1
+
+Solution Description
+In java, you cannot start your variable name with numbers 
+and also they cannot contain any other special character except underscore (_) and
+dollar ($).
