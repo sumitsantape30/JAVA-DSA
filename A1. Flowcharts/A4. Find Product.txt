@@ -1,0 +1,6 @@
+Find Product
+
+You are given a single non-negative integer, N. You need to calculate and print N factorial (N!)
+N factorial is defined as the product of all integers from 1 to N (both inclusive)
+Draw a flowchart for this process
+Note : You don't need to submit the problem. Just attempt in your notebook and ask doubts if you need help.
