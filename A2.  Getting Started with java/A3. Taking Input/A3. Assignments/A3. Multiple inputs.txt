@@ -1,0 +1,17 @@
+What is the output of the following code if input is : 10 abc def
+
+Scanner s = new Scanner(System.in);
+int a = s.nextInt();
+String str = s.next();
+System.out.print(a);
+System.out.println(str);
+
+a. 10 abc def  b. 10abc  c.10abcdef  d.10 abc
+
+Solution Description
+"s.nextInt()" scans and returns the next token as int. A token is part of
+entered line that is separated from other tokens by space, tab or newline.
+So when input line is - “10 abc def” then s.nextInt() returns the first token
+as int i.e. “10” and s.next() returns the next token "abc”. While printing,
+in first statement a is printed and then str. There is no space or nextline
+between both print. Hence output is : 10abc.
