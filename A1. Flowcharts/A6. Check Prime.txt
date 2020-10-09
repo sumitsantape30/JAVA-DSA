@@ -1,0 +1,6 @@
+Check Prime
+
+Draw a flowchart to take a number N from user. And check if that number is prime or not.
+Print "Yes" if number is prime, otherwise print "No".
+Assume N >= 2.
+Note : You don't need to submit the problem. Just attempt in your notebook and ask doubts if you need help.
