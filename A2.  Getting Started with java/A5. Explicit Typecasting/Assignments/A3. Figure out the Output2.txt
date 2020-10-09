@@ -1,0 +1,10 @@
+What will be the output ?
+
+int i = ‘c’;
+System.out.println(i);
+
+Answer
+99
+
+Solution Description
+#### When we put char ‘c’ into an int, its ASCII value will be put in the int i.e. 99.
