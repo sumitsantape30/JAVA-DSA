@@ -17,5 +17,4 @@ public class Prime {
 		}
 		System.out.println("Prime");
 	}
-
 }
