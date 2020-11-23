@@ -1,4 +1,4 @@
 Average of three numbers
 
 You are given three numbers. You need to calculate and print their average value. Draw a flowchart for this process.
-Note : You don't need to submit the problem. 
+
