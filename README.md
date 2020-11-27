@@ -1,2 +1,2 @@
 # My-Codes-JAVA-DSA
-My Repository for Core Java Codes, Data Structures and Algorithms
+My Repository  Core Java Codes, Data Structures and Algorithms
