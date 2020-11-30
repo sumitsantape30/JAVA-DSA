@@ -22,7 +22,7 @@ public class Add2Num {
 		boolean otherB = false;
 		
 		//float f;
-		//System.out.println(f)
+		//System.out.println(f);
 	}
 
 }
