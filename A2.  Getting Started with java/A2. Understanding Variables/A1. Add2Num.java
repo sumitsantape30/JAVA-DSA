@@ -24,5 +24,5 @@ public class Add2Num {
 		//float f;
 		//System.out.println(f);
 	}
-
+}
 
