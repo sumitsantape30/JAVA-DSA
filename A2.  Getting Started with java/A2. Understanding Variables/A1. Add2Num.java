@@ -25,4 +25,4 @@ public class Add2Num {
 		//System.out.println(f);
 	}
 
-}
+
