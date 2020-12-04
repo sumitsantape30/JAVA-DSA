@@ -8,3 +8,8 @@ public class HelloWorld {
 		System.out.println("HelloWorld");
 	}
 }
+
+Output:
+
+hello World
+Hello WorldHello World
