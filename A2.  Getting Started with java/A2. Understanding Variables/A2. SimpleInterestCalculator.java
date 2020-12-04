@@ -8,5 +8,4 @@ public class SimpleInterestCalculator {
 		
 		System.out.println(si);
 	}
-
 }
