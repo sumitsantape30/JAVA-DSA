@@ -7,7 +7,7 @@ public class Add2Num {
 		int k = i + j;
 		System.out.println(k);
 		
-		i = 13;
+		i = 13; // i ki value update bhi kr skte (without using int i=13 again)
 		
 		
 		short s = 123;
