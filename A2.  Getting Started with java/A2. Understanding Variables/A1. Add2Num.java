@@ -26,3 +26,6 @@ public class Add2Num {
 	}
 }
 
+Output:
+25
+
