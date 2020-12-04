@@ -9,3 +9,6 @@ public class SimpleInterestCalculator {
 		System.out.println(si);
 	}
 }
+
+Output:
+50
