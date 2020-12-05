@@ -24,5 +24,12 @@ public class SimpleInterestCalculator {
 		
 		System.out.println(si);
 	}
-
 }
+
+Input:
+6
+9
+100
+	
+Output:
+54
