@@ -34,6 +34,7 @@ Sample Output 2 :
 T
 6
 
+Code:
 
 import java.util.*;
 public class Solution {
