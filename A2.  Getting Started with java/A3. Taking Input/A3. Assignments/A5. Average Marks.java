@@ -53,9 +53,17 @@ public class Solution {
 		int m3=sc.nextInt();
 		
 		int avg=(m1+m2+m3)/3;
-		System.out.println(str+"\n"+avg);
-		
+		System.out.println(str+"\n"+avg);	
 	}
-
 }
+
+Input:
+a
+45
+32
+90
+
+Output:
+a 55
+
 
