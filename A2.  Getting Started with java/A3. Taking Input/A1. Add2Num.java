@@ -29,5 +29,12 @@ public class Add2Num {
 		//float f;
 		//System.out.println(f);
 	}
-
 }
+
+Input:
+100
+100
+
+Output:	
+200
+
