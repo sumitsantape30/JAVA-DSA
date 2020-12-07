@@ -13,5 +13,11 @@ public class Logical {
 		System.out.println((a >= b) || (a >= c));
 		System.out.println(!(a>=b));
 	}
-
 }
+
+Input: 4 5 6
+Output:
+false
+false
+true
+
