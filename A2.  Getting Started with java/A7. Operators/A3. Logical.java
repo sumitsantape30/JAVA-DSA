@@ -16,6 +16,7 @@ public class Logical {
 }
 
 Input: 4 5 6
+	
 Output:
 false
 false
