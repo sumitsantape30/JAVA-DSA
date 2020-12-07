@@ -26,5 +26,9 @@ public class DataType {
 		
 		int j = 100;
 	}
-
 }
+
+Output:
+12345432
+-539247567 // Why we got negative number? 
+	   // coz, Out of the 8bytes of the long only 4bytes gets copied, out of this 4bytes first bit was 1 that's why we got negative numbers.
