@@ -1,4 +1,4 @@
-Range of byte data type is ?
+Range of byte data type is ? (1 byte = 8 bit)
 
 Options
 -128 to 255
