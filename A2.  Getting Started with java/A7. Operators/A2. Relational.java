@@ -20,5 +20,18 @@ public class Relational {
 		System.out.println("Is Less " + isless);
 		System.out.println("Is Less Equal " + isLessEq);
 	}
-
 }
+
+Input:
+12 4
+	
+Output:
+Is Equal false
+Is Not Equal true
+Is Greater true
+Is Greater Equal true
+Is Less false
+Is Less Equal false
+
+
+
