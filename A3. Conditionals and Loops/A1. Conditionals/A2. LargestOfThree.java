@@ -9,16 +9,22 @@ public class LargestOfThree {
 		int a = s.nextInt();
 		int b = s.nextInt();
 		int c = s.nextInt();
-//		
-//		if (a >= b && a >= c) {
-//			System.out.println(a);
-//		} else {
-//			if (b >= c && b >= a) {
-//				System.out.println(b);
-//			} else {
-//				System.out.println(c);
-//			}
-//		}
+
+// Variation 1 ----------------------------------------------
+		if( a >= b && a >= c ) {
+			System.out.println(a);
+		}else {
+			if( b >= a && b >= c) {
+				System.out.println(b);
+			}else {
+				System.out.println(c);
+			}
+			
+				
+//Input :  5 6 7
+//Output : 7
+	
+// Variation 2 ----------------------------------------------
 		
 		if (a >= b && a >= c) {
 			System.out.println("A");
@@ -30,5 +36,11 @@ public class LargestOfThree {
 			System.out.println("C");
 			System.out.println(c);
 		}
+// Input :  9 7 3
+// Output : A
+//          9
+
 	}
 }
+
+
