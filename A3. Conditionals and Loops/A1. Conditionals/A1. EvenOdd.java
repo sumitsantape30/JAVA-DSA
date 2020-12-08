@@ -17,8 +17,8 @@ public class EvenOdd {
 		}else{
 			System.out.println("Odd");
 		}
-		//Input: 5
-               // Output: Odd
+		//Input  : 5
+               // Output : Odd
 			
 		
 //Approach 2--------------------------------------------------
@@ -31,11 +31,11 @@ public class EvenOdd {
 			System.out.println( "True" );
 		}
 		System.out.println( "Odd" );
-		//Input 1    :5
+		//Input 1    : 5
                 // Output 1  : Odd
 		// Input 2   : 8
                 // Output 2  : True
-                //            Odd
+                //             Odd
 		
 //Approach 3-------------------------------------------------
 		Scanner s= new Scanner(System.in);
@@ -51,7 +51,7 @@ public class EvenOdd {
 		//Input 1    : 7
                 // Output 1  : Odd
 		// Input 2   : 8
-                // Output 2  :Even	
+                // Output 2  : Even	
 	}
 }
 
