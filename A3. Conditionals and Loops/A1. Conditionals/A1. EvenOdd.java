@@ -9,8 +9,8 @@ public class EvenOdd {
 // Approach 1-------------------------------------------------
 		Scanner s = new Scanner(System.in);
 		
-		int n=s.nextInt();
-		int rem = n%2 ;
+		int n = s.nextInt();
+		int rem = n % 2 ;
 		
 		if( rem == 0 ){
 			System.out.println("Even");
@@ -22,15 +22,15 @@ public class EvenOdd {
 			
 		
 //Approach 2--------------------------------------------------
-		Scanner s= new Scanner(System.in);
+		Scanner s = new Scanner(System.in);
 		
-		int n=s.nextInt();
+		int n = s.nextInt();
 		int rem = n%2;
 		
-		if(rem == 0) {
+		if( rem == 0) {
 			System.out.println( "True" );
 		}
-		System.out.println("Odd");
+		System.out.println( "Odd" );
 		//Input 1    :5
                 // Output 1  : Odd
 		// Input 2   : 8
@@ -40,13 +40,14 @@ public class EvenOdd {
 //Approach 3-------------------------------------------------
 		Scanner s= new Scanner(System.in);
 		
-		int n=s.nextInt();
-		int rem= n%2;
-		if(rem == 0) {
-			System.out.println("Even");
+		int n = s.nextInt();
+		int rem = n % 2 ;
+		
+		if( rem == 0) {
+			System.out.println( "Even" );
 			return;
 		}
-		System.out.println("Odd");
+		System.out.println( "Odd" );
 		//Input 1    : 7
                 // Output 1  : Odd
 		// Input 2   : 8
