@@ -12,7 +12,9 @@ Sample Input 1 :
 Sample Output 1 :
 12
 
+Code:
 
+package while_loops
 import java.util.*;
 public class Solution
 {
@@ -30,5 +32,4 @@ public class Solution
        }
        System.out.println(s);
     }
-
 }
