@@ -18,3 +18,7 @@ public class Prime {
 		System.out.println("Prime");
 	}
 }
+
+Input: 17
+Output: It is prime Numbers
+
