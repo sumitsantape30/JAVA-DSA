@@ -28,7 +28,7 @@ public class Solution
 		while(i <= n) {
 			
 			if( i % 2 == 0) {
-             sum= sum + i;
+                           sum= sum + i;
 			}
 			i++;
 		}
