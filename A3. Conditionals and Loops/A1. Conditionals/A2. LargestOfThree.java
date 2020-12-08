@@ -36,9 +36,9 @@ public class LargestOfThree {
 			System.out.println("C");
 			System.out.println(c);
 		}
-// Input :  9 7 3
+// Input :  10 10 5
 // Output : A
-//          9
+//          10
 
 	}
 }
