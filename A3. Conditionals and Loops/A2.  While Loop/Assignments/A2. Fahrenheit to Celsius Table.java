@@ -73,5 +73,4 @@ public class Solution {
 		a=a+b;
 		}
 	}
-
 }
