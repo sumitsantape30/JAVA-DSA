@@ -60,17 +60,16 @@ public class Solution {
 	 	* Read input as specified in the question.
 	 	* Print output as specified in the question.
 		*/
-      Scanner s=new Scanner(System.in);
-		int a=s.nextInt();
-		int b=s.nextInt();
-		int c=s.nextInt();
+     Scanner s = new Scanner(System.in);
+		int S = s.nextInt();
+		int E = s.nextInt();
+		int W = s.nextInt();
 		int cel;
-		while(a<=c)
-		{
-		cel=(5*(a-32))/9;
-		System.out.println(a+" "+cel);
-		//System.out.print(cel);
-		a=a+b;
+		while (S <= E) {
+			cel = (5 * (S - 32)) / 9;
+			System.out.println(S + " " + cel);
+			// System.out.print(cel);
+			S = S + W;
 		}
 	}
 }
