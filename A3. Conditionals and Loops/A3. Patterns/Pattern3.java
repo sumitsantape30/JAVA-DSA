@@ -25,5 +25,11 @@ public class Pattern3 {
 			i = i + 1;
 		}
 	}
-
 }
+
+Input  : 3
+Output : 
+  1
+ 23
+456
+
