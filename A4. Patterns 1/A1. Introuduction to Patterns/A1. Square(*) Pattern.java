@@ -12,7 +12,7 @@ public class p1_square {
 			int j=1;
 			while(j<=n)
 			{
-				System.out.print("4");
+				System.out.print("*"); // can put '4' instead of '*'
 				j++;
 			}
 			System.out.println();
@@ -20,3 +20,12 @@ public class p1_square {
 		}
 	}
 }
+
+Input: 5
+Output: 
+*****
+*****
+*****
+*****
+*****
+
