@@ -41,6 +41,8 @@ public class Main
 	    int i = 0;
 	    while(n > 0)
 	    {
+		// Original number mese last digit nikalna padega (r = n%10), then woh last digit(r) check karna padega even h ya odd,
+		//and then last mai original number ko update karna padega. (n= n/10)
 	        r = n % 10;
 	        if ( r % 2 == 0)
 	        {
