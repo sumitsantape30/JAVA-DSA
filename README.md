@@ -1,2 +1,2 @@
 # My-Codes-JAVA-DSA
-My Repository for Core Java Codes, Data Structures and Algorithms :)
+Maintaining my Repository for Java Foundation Codes with Data Structures and Algorithms :)
