@@ -1,0 +1,19 @@
+Bitwise Operator
+
+What will be the output ?
+
+public static void main(String args[])
+   {
+       int a = 42;
+       int b = ~a; (there is tilde sign before a)
+       System.out.print(a + " " + b);       
+   }
+   
+Options
+42 42
+42 -43 
+42 43
+43 43
+
+Correct Answer
+42 -43 
