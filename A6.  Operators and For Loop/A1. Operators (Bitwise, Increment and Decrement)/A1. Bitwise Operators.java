@@ -15,7 +15,6 @@ public class BitwiseOperator {
 		System.out.println( -4 << 1);
 		System.out.println( -4 >> 1);
 	}
-
 }
 
 Output:
