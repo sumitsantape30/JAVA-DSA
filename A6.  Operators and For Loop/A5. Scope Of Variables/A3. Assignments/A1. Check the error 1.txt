@@ -1,0 +1,20 @@
+Check the error
+
+Will following code generate error ?
+
+public class Main {
+    public static void main(String[] args) {
+        int a = 10;
+        if(a > 5) {
+            int b = 10;
+        }
+        System.out.println(b);
+    }
+}
+
+Options:
+Yes 
+No
+
+Correct Answer
+yes, the scope of 'b' is inside the bracket only it cannot be accessed outside bracket.
