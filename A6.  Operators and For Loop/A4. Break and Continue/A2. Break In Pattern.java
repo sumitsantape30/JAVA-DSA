@@ -11,12 +11,18 @@ public class Pattern {
 				System.out.print(j + " ");
 				j++;
 				if (j > i) {
-					break;
+					break; // Break sirf andar wala while loop ko break karega not baharwale loop ko
 				}
 			}
 			System.out.println();
 			i++;
 		}
 	}
-
 }
+
+Input: 4
+Output:
+1 
+1 2 
+1 2 3 
+1 2 3 4 
