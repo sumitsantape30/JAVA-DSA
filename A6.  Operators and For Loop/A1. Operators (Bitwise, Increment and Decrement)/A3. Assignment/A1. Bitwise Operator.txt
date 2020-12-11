@@ -9,7 +9,7 @@ public static void main(String args[])
        System.out.print(a + " " + b);       
    }
    
-Options
+Options:
 42 42
 42 -43 
 42 43
