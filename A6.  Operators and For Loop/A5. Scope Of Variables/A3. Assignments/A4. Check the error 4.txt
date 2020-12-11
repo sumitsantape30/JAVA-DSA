@@ -1,0 +1,18 @@
+Check the error
+
+Will following code generate error ?
+
+public class Main {
+    public static void main(String[] args) {
+    for(int i = 0; i < 3; i++) {
+        System.out.print(i + " ");
+        }
+    System.out.print(i + " ");
+    }
+}
+
+Options
+Yes 
+No
+
+Correct Answer: Yes
