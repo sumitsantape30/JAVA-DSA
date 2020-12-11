@@ -1,0 +1,23 @@
+What is the output
+
+What is the output ?
+
+public class Main {
+    public static void main(String[] args) {
+    int a = 10;
+    while(a > 5) {
+        int b = 1;
+        System.out.print(b + " ");
+        a--;
+    }
+    }
+}
+
+Options
+10 9 8 7 6
+1 1 1 1 1 
+Error
+Infinite loop
+
+Correct Answer
+1 1 1 1 1 
