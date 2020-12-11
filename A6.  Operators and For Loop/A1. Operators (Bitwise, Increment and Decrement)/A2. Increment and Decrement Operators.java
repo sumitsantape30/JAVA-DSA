@@ -27,12 +27,12 @@ public class IncrementDecrement {
 		System.out.println(a); //Output: 8
 		
 		a ^= 2;
-		System.out.println(a); //
+		System.out.println(a); // Output: 10
 	
-		int ans2 = 2 + 3 * 4;
-		System.out.println(ans2);
-		int ans = (2 * 3)/2;
-		System.out.println(ans);
+		int ans2 = 2 + 3 * 4; //(Wrong Way, use brackets)
+		System.out.println(ans2); // Output: 14
+		int ans = (2 * 3)/2;  // Right Way
+		System.out.println(ans); // Output: 3
 		
 	}
 
