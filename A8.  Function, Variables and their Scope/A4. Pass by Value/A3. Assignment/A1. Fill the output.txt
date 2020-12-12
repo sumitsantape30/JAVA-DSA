@@ -1,0 +1,15 @@
+Fill the output
+
+What will be the output of the following code ?
+
+public static void doubleValue(int a ){
+    a = a * 2;
+}
+public static void main(String[] args) {
+    int a = 8;
+    doubleValue(a);
+    System.out.println(a);
+}
+
+Answer
+8
