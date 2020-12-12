@@ -1,0 +1,23 @@
+Check the error
+
+Will following code generate any error ?
+
+public class Main {
+    public static void func(int a) {
+        int b = 10;
+        a = a + 10;
+        System.out.println(a); // Output: 20
+    }
+
+    public static void main(String[] args) {
+        int a = 10;
+        func(a);
+        System.out.println(a); //Output: 10
+    }
+}
+
+Options
+Yes
+No 
+
+Correct Answer: No
