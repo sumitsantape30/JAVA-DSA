@@ -1,0 +1,15 @@
+What is the output
+
+What will be the output of the following code ?
+
+int arr[] = new int[5];
+System.out.println(arr[0]);
+
+Options
+Garbage value
+ArrayIndexOutOfBoundsException
+0 
+
+Correct Answer : 0
+Solution Description
+####Whenever an integer array is created, all elements are initialised to 0.
