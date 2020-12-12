@@ -1,0 +1,17 @@
+Fill the output
+
+What will be the output of the following code ?
+
+public static int func(int a){
+    a += 10;
+    return a;
+}
+
+public static void main(String[] args) {
+    int a = 5;
+    func(a); // yaha a ki value update nhi kari
+    System.out.println(a); // a ki value update nhi kari isliye main wala jo 'a' tha wahi output ayega
+}
+
+Answer
+5
