@@ -1,0 +1,12 @@
+What is the output
+
+What will be the output of the following code ?
+
+boolean arr[] = new boolean[5];
+System.out.println(arr[0]);
+
+Answer
+false
+
+Solution Description
+####Whenever an boolean array is created, all elements are initialised to false.
