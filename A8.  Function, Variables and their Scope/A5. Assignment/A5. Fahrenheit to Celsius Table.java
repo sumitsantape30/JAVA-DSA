@@ -69,7 +69,7 @@ public class primeNumbers {
 		int si = s.nextInt();
 		int e = s.nextInt();
 		int w = s.nextInt();
-		FtoCel(sv, e, w);
+		FtoCel(si, e, w);
 	}
 
 }
