@@ -21,3 +21,27 @@ Sample Output 2 :
 5 11 14 17
 
 Code:
+
+package Assignments;
+
+import java.util.Scanner;
+
+public class TermsOfAP {
+
+	public static void main(String[] args) {
+
+		Scanner s = new Scanner(System.in);
+		int n = s.nextInt();
+		int i = 1;
+		int x = 1;
+
+		while (i <= n) {
+			x = (3 * i) + 2;
+			if (x % 4 != 0) { // Not multiple of 4 means 4 ke table mai nhi hai (means 4 se divide nhi hote)
+				System.out.println(x + " ");
+			}
+			i++;
+		}
+	}
+
+}
