@@ -35,11 +35,11 @@ public class DecimalToBinary {
 
 		int ans = 0;
 		int pv = 1;
-		int valueAtfirstPlace = 0;
+		int v = 1; // v is the first place value)
 
 		while (n != 0) {
 			fv = n % 10;
-			ans = ans + (valueAtfirstPlace * pv);
+			v = v + (valueAtfirstPlace * pv);
 			n = n / 10;
 			pv = 2 * pv;
 		}
