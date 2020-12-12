@@ -1,0 +1,22 @@
+Find the output
+
+What will be the output of the following code ?
+
+public static void demo(int a, int b){
+    System.out.println(a + " " + b);
+}
+
+public static void main(String[] args) {
+    int a = 5;
+    int b = 15; 
+    demo(a);
+}
+
+Options
+5 15
+Compilation Error 
+5 0
+None of these
+
+Correct Answer: Compilation Error 
+
