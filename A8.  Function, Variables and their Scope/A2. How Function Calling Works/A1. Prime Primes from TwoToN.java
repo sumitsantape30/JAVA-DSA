@@ -29,7 +29,8 @@ public class primeNumbers {
 
 	public static void main(String[] args) {
 
-		printPrime(100);
+		printPrime(100); 
+		System.out.println("Back in main");// this Back in main is printed only after printprime() is completely run. main printprime() run hone ka wait karega.
 	}
 
 }
