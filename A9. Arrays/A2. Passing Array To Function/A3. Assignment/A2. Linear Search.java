@@ -46,3 +46,50 @@ Sample Output 2:
 2
 
 Code:
+
+package Restart;
+
+import java.util.Scanner;
+
+public class Practice {
+
+	public static int[] takeInput() {
+		Scanner s = new Scanner(System.in);
+		int n = s.nextInt();
+
+		int arr[] = new int[n];
+		for (int i = 0; i < n; i++) {
+			arr[i] = s.nextInt();
+		}
+		return arr;
+	}
+
+	public static int search(int arr[]) {
+
+		Scanner s = new Scanner(System.in);
+		int n = s.nextInt();
+
+		for (int i = 0; i < arr.length; i++) {
+			if (arr[i] == n) {
+				return i;
+			}
+
+		}
+		return -1;
+	}
+
+	public static void main(String[] args) {
+
+		int arr[] = takeInput();
+		int searchResult = search(arr);
+		System.out.println(searchResult);
+	}
+}
+
+Input: 
+5
+7 6 5 3 2 
+6
+Output:
+1
+
