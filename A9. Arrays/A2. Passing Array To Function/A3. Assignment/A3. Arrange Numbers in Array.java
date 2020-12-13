@@ -35,3 +35,62 @@ Sample Output 2 :
 1 3 2
 
 Code:
+
+package array;
+
+import java.util.Scanner;
+
+public class ArrayNumbersInArray {
+
+	public static int[] arrange(int n) {
+
+		int arr[] = new int[n];
+
+		int s = 0, e = n - 1, val = 1;
+		if (n % 2 == 0) {
+
+			for (s = 0; s <= e; s++, e--) {
+
+				arr[s] = val;
+				val++;
+
+				arr[e] = val;
+				val++;
+
+			}
+		} else {
+
+			for (s = 0; s <= e; s++, e--) {
+
+				if (s <= ((n - 1) / 2)) {
+					arr[s] = val;
+					val++;
+				}
+
+				if ((((n - 1) / 2) + 1) <= e) {
+					arr[e] = val;
+					val++;
+				}
+
+			}
+		}
+		return arr;
+	}
+
+	public static void print(int arr[], int n) {
+
+		for (int i = 0; i < arr.length; i++) {
+			System.out.println(arr[i]);
+		}
+	}
+
+	public static void main(String[] args) {
+
+		Scanner s = new Scanner(System.in);
+		int n = s.nextInt();
+		int arr[] = arrange(n);
+		print(arr, n);
+	}
+
+}
+
