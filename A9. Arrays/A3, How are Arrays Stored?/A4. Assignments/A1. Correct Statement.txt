@@ -1,0 +1,14 @@
+Correct Statement
+
+Figure out the correct statement for the code below ?
+
+int[] arr = new int[5];
+arr = new int[6];
+
+Options
+The code has compile error because the variable arr cannot be changed once it is assigned.
+The code will compile and run fine. The second line assigns a new array to arr. 
+The code has compile errors because we cannot assign a different size array to arr.
+
+None of these
+The code will compile and run fine. The second line assigns a new array to arr. 
