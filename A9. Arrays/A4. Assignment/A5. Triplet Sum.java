@@ -47,3 +47,46 @@ Since there doesn't exist any triplet with sum equal to 19 for the first query, 
 For the second query, we have 5 triplets in total that sum up to 10. They are, (2, 8, 0), (2, 11, -3), (-5, 5, 10), (8, 5, -3) and (-6, 5, 11)
 
 Code:
+
+import java.util.*;
+public class Solution {
+    
+    public static int findTriplet(int[] arr, int x) {
+    	int count = 0;
+	    	for(int i = 0; i < arr.length-2; i++) 
+	    	{
+	    		for(int j = i + 1; j < arr.length - 1; j++)
+	    		{
+	    			for(int k = j + 1; k < arr.length; k++)
+	    			{
+	    				if((arr[i] + arr[j] + arr[k]) == x)
+	    				{
+	    					count = count + 1;
+	    				}
+	    			}
+	    		}
+	    	}
+	    	
+	    	return count;
+	    }
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        while(t != 0)
+        {
+            int n = sc.nextInt();
+            int a[] = new int[n];
+            for(int i = 0; i < n; i++)
+            {
+            	a[i] = sc.nextInt();
+            }
+            int x = sc.nextInt();
+            int res = findTriplet(a , x);
+            System.out.println(res);
+        	t--;
+        
+        }        sc.close();
+    }
+
+}
