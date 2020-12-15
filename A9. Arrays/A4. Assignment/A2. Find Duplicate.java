@@ -40,3 +40,47 @@ Sample Output 2:
 3
 
 Code:
+
+import java.util.*;
+public class Solution{  
+    
+    public static int duplicateNumber(int arr[]) {
+    	int res = 0, n = arr.length;
+	   for(int i = 0; i < n-1; i++)
+	   {
+		  for(int j = i+1; j < n; j++)
+		  {
+			  if( (arr[i] == arr[j] && (i != j)))
+			  {
+				  res = arr[j];
+			  }
+		  }
+		 
+	   }
+	   return res;
+	}
+	public static void take(int a[], int n)
+	{
+		Scanner s = new Scanner(System.in);
+		for(int i = 0; i < n; i++)
+		{
+			a[i] = s.nextInt();
+		}
+		s.close();
+	}
+	public static void main(String[] args) 
+	{
+		Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        while(t != 0)
+        {
+            int n = sc.nextInt();
+            int a[] = new int[n]; 
+        	take(a,n);
+            int r = duplicateNumber(a);
+            System.out.println(r);
+        	t--;
+        
+        }        sc.close();
+    }
+}
