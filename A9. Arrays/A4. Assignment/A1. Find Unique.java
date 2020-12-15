@@ -41,3 +41,41 @@ Sample Output 2:
 10
 
 Code:
+
+import java.util.*;
+public class Solution{  
+
+    public static int findUnique(int[] arr){
+		int n = arr.length;
+		int res = arr[0];
+		for(int i = 1; i < n; i++)
+		{
+		    res = res ^ arr[i];
+			
+		}
+		return res;
+	}
+	public static void take(int a[], int n)
+	{
+		Scanner s = new Scanner(System.in);
+		for(int i = 0; i < n; i++)
+		{
+			a[i] = s.nextInt();
+		}
+		s.close();
+	}
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        while(t != 0)
+        {
+            int n = sc.nextInt();
+            int a[] = new int[n]; 
+        	take(a,n);
+            int r = findUnique(a);
+            System.out.println(r);
+        	t--;
+        
+        }        sc.close();
+    }
+}
