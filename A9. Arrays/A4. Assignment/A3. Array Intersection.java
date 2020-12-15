@@ -41,3 +41,49 @@ Sample Output 1 :
 10
 
 Code:
+
+import java.util.*;
+public class Solution{  
+    
+    public static void intersections(int arr1[], int arr2[]) {
+    	for(int i = 0; i < arr1.length; i++)
+		{
+			for(int j = 0; j < arr2.length; j++)
+			{
+				if(arr1[i] == arr2[j])
+				{
+					arr2[j] = -5;
+					System.out.print(arr1[i]+" ");
+					break;
+				}
+				
+			}
+		}
+		System.out.println();
+    }
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        while(t != 0)
+        {
+            int n = sc.nextInt();
+            int a1[] = new int[n];
+//            take1(a1,n);
+            for(int i = 0; i < n; i++)
+            {
+            	a1[i] = sc.nextInt();
+            }
+            int m = sc.nextInt();
+            int a2[] = new int[m];
+        	//take2(a2,m);
+            for(int i = 0; i < m; i++)
+            {
+            	a2[i] = sc.nextInt();
+            }
+            intersections(a1, a2);
+        	t--;
+        
+        }        sc.close();
+    }
+}
