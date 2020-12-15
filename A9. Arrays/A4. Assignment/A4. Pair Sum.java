@@ -48,3 +48,41 @@ Since there doesn't exist any pair with sum equal to 12 for the first query, we 
 For the second query, we have 2 pairs in total that sum up to 10. They are, (2, 8) and (5, 5).
 
 Code:
+
+import java.util.*;
+public class Solution {  
+
+    public static int pairSum(int arr[], int x) {
+    	
+		int count = 0;
+    	for(int i = 0; i < arr.length- 1; i++)
+    	{
+    		for(int j = i + 1; j < arr.length; j++)
+    		{
+    		   	if((arr[i] + arr[j]) == x)
+    		   	{
+    		   		count++;
+    		   	}
+    		}
+    	}
+    	return count;
+    }
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+        int t = sc.nextInt();
+        while(t != 0)
+        {
+            int n = sc.nextInt();
+            int a[] = new int[n];
+            for(int i = 0; i < n; i++)
+            {
+            	a[i] = sc.nextInt();
+            }
+            int x = sc.nextInt();
+            int res = pairSum(a , x);
+            System.out.println(res);
+        	t--;
+        
+        }        sc.close();
+    }
+}
