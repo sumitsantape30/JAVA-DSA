@@ -39,4 +39,34 @@ Sample Output 2:
 
 Code:
 
+package array;
+
+public class bubble_sort {
+
+	public static void bubbleSort(int input[]) { //input to the function will be array
+		
+		// n- 1 rounds karna padega but i zero se start hora so length-2 lena padega
+		for (int i = 0; i < input.length - 1; i++) { // largest value of 'i' jiske liye yeh loop run krra hoga will be length-2
+			
+			//har round mai hum compare karre jarurat hai to swap karre ya fir aage move karre
+			for (int j = 0; j < input.length - i - 1; j++) { //for n element, n-2 is the last index jiska comparison hua 
+				 
+				if (input[j] > input[j + 1]) { // har round mai j and j+1 wale element ko compare karre honge agar yeh condition false hue to j ki value ek se increase hojayegi aur hum next two elements ko compare karre honge
+					
+					int temp = input[j];
+					input[j] = input[j + 1];
+					input[j + 1] = temp;
+				}
+			}
+		}
+	}
+
+	public static void main(String[] args) {
+		int input[] = { 8, 2, 6, 1, 5 };
+		bubbleSort(input);
+		for (int i = 0; i < input.length; i++) {
+			System.out.print(input[i]+" ");
+		}
+	}
+}
 
