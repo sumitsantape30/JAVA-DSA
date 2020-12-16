@@ -38,7 +38,8 @@ public class count_words {
 		String str = s.nextLine();
 		return str;
 	}
-
+	
+	// count 1 ko se intialised karenge, aur jar character pe jayenge aur check karenge ki space ata hai kya agar aati hai space to count ko increse kardenge.
 	public static int countWords(String str) {
 		int count = 1;
 
