@@ -8,7 +8,7 @@ public class print_prefixes {
 		return str;
 	}
 
-	//prefixes print karne keliye substring mai startIndex=0 and endIndex= i+1 print karenge.
+	//substring use krke 0 se 0 tak ki string print karenge, mera start index fix hai and end index i ke sath badhege aur +1 karna padega coz substring mai endIndex include nhi hota..
 	public static void printprefixes(String str) {
 		for (int i = 0; i < str.length(); i++) {
 			System.out.println(str.substring(0, i + 1));
