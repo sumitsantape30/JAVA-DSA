@@ -1,0 +1,23 @@
+package 2DArrays;
+
+import java.util.Scanner;
+
+public class arr2d {
+	
+	
+	public static void main(String[] args) {
+
+		int arr2d[][]= new int[3][4];
+		
+		//By default 2D mai saare elements 0 se initialised hote hai.
+		System.out.println(arr2d[2][3]); //Output: 0
+		
+		//agar intialse karna hai
+		arr2d[2][0]= 15;
+		System.out.println(arr2d[2][0]); // Output: 15
+		
+		//can also give input as
+		int arr2D[][]= {{1,2,3} , {4,5,6}}; //1,2,3= is first row and 4,5,6= is second row
+			
+	}
+}
