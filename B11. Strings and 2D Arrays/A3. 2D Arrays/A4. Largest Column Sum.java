@@ -26,6 +26,8 @@ public class how2DArayysAreStored {
 		int rows = arr.length;
 		int columns = arr[0].length;
 		int largest = Integer.MIN_VALUE;
+		
+		//column number fix karke row pe iterate karna hai
 		for (int j = 0; j < columns; j++) {
 			int sum = 0;
 			for (int i = 0; i < rows; i++) {
