@@ -1,0 +1,11 @@
+Create object
+
+Which of the following is a valid statement to create an object of class Bird in Java ?
+
+Options
+Bird b = new Bird;
+Bird b = new Bird(); 
+Bird b;
+new Bird b;
+
+Correct Answer: Bird b = new Bird(); 
