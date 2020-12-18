@@ -1,0 +1,35 @@
+Fill the output
+
+What will be the output of the following code ?
+Both classes are in same package.
+
+class Student{
+    String name;
+    int rollNo;
+    Student(int num){
+    rollNo = num;
+    }   
+    public void print(){
+    System.out.print(name +" " + rollNo+” “);
+    }
+}
+
+public class StudentUse {
+    public static void main(String[] args) {
+        Student s = new Student();
+        s.rollNo = 15;
+        s.print();
+    }
+}
+
+Options
+null 0
+null 15
+Compilation Error 
+
+Correct Answer: Compilation Error 
+
+Solution Description
+####There is Compilation error - “constructor Student() is undefined” because the default constructor 
+is available only till the point we don’t create our own constructor. So Student class has only one constructor which
+require roll number as argument, hence we should pass integer as argument while creating any Student object.
