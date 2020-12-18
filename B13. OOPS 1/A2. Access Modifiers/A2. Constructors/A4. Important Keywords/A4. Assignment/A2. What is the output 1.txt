@@ -1,0 +1,25 @@
+What is the output
+
+What will be the output of this code ?
+
+class Book{
+    final int price = 10;
+}
+
+public class MCQs {
+    public static void main(String[] args) {
+        Book b = new Book();
+        b.price = 16;
+        System.out.println(b.price);
+    }   
+}   
+
+Options
+16
+10
+Error 
+None of the above
+
+Correct Answer: Error 
+Solution Description
+####price is a final field, thus statement “ b.price = 16 “ is incorrect since we cannot re assign a final variable
