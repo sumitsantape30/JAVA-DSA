@@ -1,0 +1,10 @@
+Memory allocation
+
+Which of these operators is used to allocate memory for an object?
+Options
+malloc
+alloc
+new 
+give
+
+Correct Answer: new
