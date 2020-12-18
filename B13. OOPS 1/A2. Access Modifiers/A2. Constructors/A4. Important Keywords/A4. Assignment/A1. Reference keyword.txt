@@ -1,0 +1,11 @@
+Reference keyword
+
+Which keyword works as a reference to the current Object whose Method or constructor is being invoked ?
+
+Options
+import
+catch
+abstract
+this 
+
+Correct Answer: this
