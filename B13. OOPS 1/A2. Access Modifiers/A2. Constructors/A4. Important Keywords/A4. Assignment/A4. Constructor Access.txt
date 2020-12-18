@@ -1,0 +1,13 @@
+Constructor access
+
+Which of the modifier can't be used for constructors ?
+
+Options
+public
+private
+static 
+protected
+
+Correct Answer:static
+Solution Description
+####static keyword is bound to the class and not to an individual object, thus we can’t make constructors static.
