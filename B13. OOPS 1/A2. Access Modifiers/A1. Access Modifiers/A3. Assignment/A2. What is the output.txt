@@ -1,0 +1,27 @@
+What is the output
+
+What will be the output of the following program ?
+// Class Shape and ShapeUse are in same package
+
+class Shape{
+    private int height;
+    private int width;
+}
+
+public class ShapeUse {
+    public static void main(String[] args) {
+        Shape s = new Shape();
+        System.out.println(s.height);
+    }
+}
+
+Options
+Error 
+0
+1
+None of these
+
+Correct Answer: Error 
+
+Solution Description
+####As height is a private data member of class Shape, thus it can’t be accessed outside the class.
