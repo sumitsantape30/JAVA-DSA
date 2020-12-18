@@ -1,0 +1,11 @@
+Check Statements
+
+Which statement is not true in java language ?
+
+Options
+A public member of a class can be accessed in all the packages in the same project.
+A private member of a class cannot be accessed by the methods of the same class. 
+A private member of a class cannot be accessed outside the same class.
+None of the above.
+
+Correct Answer: A private member of a class cannot be accessed by the methods of the same class. 
