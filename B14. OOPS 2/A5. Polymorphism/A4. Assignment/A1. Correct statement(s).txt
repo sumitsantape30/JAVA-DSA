@@ -1,0 +1,18 @@
+Correct statement(s)
+
+Select the valid statement(s) on the basis of following code.
+Both classes are in same package.
+
+class Vehicle {}
+class Car extends Vehicle {}
+
+Options
+Vehicle obj = new Vehicle(); 
+Vehicle obj = new Car(); 
+Car obj = new Car(); 
+Car obj = new Vehicle();
+
+Correct Answer:
+Vehicle obj = new Vehicle(); 
+Vehicle obj = new Car(); 
+Car obj = new Car(); 
