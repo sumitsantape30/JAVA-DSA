@@ -1,0 +1,15 @@
+Valid statements
+
+Select the valid statement(s) on the basis of following code.
+Both classes are in same package.
+
+class Vehicle {}
+class Car extends Vehicle {}
+
+Options
+Class Vehicle is inheriting properties of class Car
+Class Car is inheriting properties of class Vehicle 
+Both are correct
+None
+
+Correct Answer: Class Car is inheriting properties of class Vehicle 
