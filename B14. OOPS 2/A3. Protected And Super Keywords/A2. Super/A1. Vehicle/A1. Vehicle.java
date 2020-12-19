@@ -1,4 +1,4 @@
-package Maps;
+package Vehicle;
 
 public class Vehicle {
   
