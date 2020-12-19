@@ -1,6 +1,6 @@
 package Vehicle_temp;
 
-import vehicle.Vehicle;
+import Vehicle.Vehicle;
 
 public class Truck extends Vehicle{
 
