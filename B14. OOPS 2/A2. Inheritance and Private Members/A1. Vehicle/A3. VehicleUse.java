@@ -17,7 +17,7 @@ public class VehicleUse {
        
 		c.print(); // agar print() function Car mai nhi hota to woh Vehicle wala print() function call krti.
        //print function car mai bhi hai aur vehicle mai bhi, 
-        //agar humne car mai print() call kiya to pehle woh car function mai check karega ki waha print() function hai kya, agar car mai nhi hua to uske parent(vehicle) ke pas jayenge
+        //agar humne car pe print() call kiya to pehle woh car class mai check karega ki waha print() function hai kya, agar car mai nhi hua to uske parent(vehicle) ke pas jayenge
         
        // c.printCar(); //printCar ko print() change kiya car class mai
         
