@@ -1,4 +1,4 @@
-package VehicleUse;
+package Vehicle;
 
 public class VehicleUse {
 
