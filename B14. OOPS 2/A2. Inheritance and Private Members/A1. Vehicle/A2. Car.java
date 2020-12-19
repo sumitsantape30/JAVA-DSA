@@ -1,7 +1,7 @@
 package Oops2;
 
 public class Car extends Vehicle { 
-	// car ke andar vehicle ke private data memebr bhi inherit honge but directly access nhi kr skti
+	// car ke andar vehicle ke private data memeber bhi inherit honge but directly access nhi kr skte usko function ke through access karna padega.
 	//yaha mai car specific chize dal dunga
 	int numGears;
 	int isConvertible;
