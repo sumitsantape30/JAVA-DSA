@@ -1,0 +1,11 @@
+Valid statement
+
+Select the correct statement -
+
+Options
+The ‘try’ block should be followed by a ‘catch’ block.
+The ‘try’ block should be followed by a ‘finally’ block.
+The ‘try’ block should be followed by either a ‘catch’ block or a ‘finally’ block. 
+can write independent try block
+
+Correct Answer: The ‘try’ block should be followed by either a ‘catch’ block or a ‘finally’ block. 
