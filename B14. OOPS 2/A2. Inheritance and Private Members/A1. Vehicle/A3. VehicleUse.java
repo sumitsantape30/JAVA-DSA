@@ -24,3 +24,12 @@ public class VehicleUse {
 	}
 
 }
+
+Output:
+Vehicle Color :pink
+Vehicle maxSpeed :77
+Car Color : Blue
+Car maxSpeed : 88
+numGears : 10
+isConvertible : 0
+
