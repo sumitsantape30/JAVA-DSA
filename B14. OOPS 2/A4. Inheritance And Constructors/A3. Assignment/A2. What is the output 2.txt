@@ -1,0 +1,34 @@
+What is the output
+
+What Is The Output
+All classes are in same package.
+
+class Car {
+    private int seats;
+    private int speed;
+
+    public Car() {
+    System.out.print("This Is Car ");
+    }
+}
+
+class Audi extends Car {
+    Audi() {
+    System.out.print("This Is Audi ");
+    super();
+    }
+} 
+
+class Main {
+    public static void main(String args[]) {
+    Audi a = new Audi();
+    }         
+}
+
+Options
+This Is Car This Is Audi
+This Is Audi This Is Car
+Compilation Error 
+Runtime Error
+
+Correct Answer: Compilation Error 
