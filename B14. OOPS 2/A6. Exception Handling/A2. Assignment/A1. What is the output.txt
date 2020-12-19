@@ -1,0 +1,24 @@
+What is the output
+
+Select the output of the following program
+
+class A{
+    public static void main(String[] args){
+
+    try{
+        return;
+    }
+    finally{
+        System.out.println("Hello coding ninjas");
+    }
+  }
+}
+
+Options
+No output
+Exception if thrown at run time
+Compile time error
+Hello coding ninjas 
+
+Correct Answer: Hello coding ninjas 
+
