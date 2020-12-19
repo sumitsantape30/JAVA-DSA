@@ -5,7 +5,6 @@ public class Vehicle {
 	protected String color; 
 	private int maxSpeed; 
 	
-	//humne vehicle ke anadr naya constructor banaya and default constructor (public vehicle()) gayab hogya, bina parameters wala constructor gayab hogya.
 	public Vehicle( int maxSpeed) {
 		this.maxSpeed= maxSpeed;
 		System.out.println("Vehicle Constructor");
