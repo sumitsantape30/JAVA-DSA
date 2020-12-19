@@ -1,4 +1,4 @@
-package Maps;
+package Oops2;
 
 public class Car extends Vehicle { 
 	// car ke andar vehicle ke private data memebr bhi inherit honge but directly access nhi kr skti
