@@ -1,0 +1,12 @@
+Correct option
+
+Select option for access modifiers in increasing order of their visibility.
+
+Options
+Private, Protected, Default, Public
+Protected, Private, Default, Public
+Private, Default, Protected, Public 
+Private, Default, Public, Protected
+
+Correct Answer: Private, Default, Protected, Public 
+
