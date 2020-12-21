@@ -1,0 +1,33 @@
+// Approach 3
+ 
+// jis windows keliye checkSorted check karna hai uske liye harbar nya array nhi banayenge, uskeliye keliye harbar start rakh lete hai (ki yaha se yahatk karna hai)
+// startIndex will tell me ki kis range mai check karna hai ki array sorted hai ya nhi
+ // This function checks if the array is sorted from startIndex to end
+	public static boolean checkSortedBetter(int input[], int startIndex) { //
+
+		//iss case mai humare length change nhi hori so basecase length se related nhi rahegi, rather hum startIndex se related kam karre and woh change hori so startIndex related basecase rahegi.
+		if (startIndex >= input.length - 1) { //startIndex zero se start hoga, agar array ke last wale element pe pahuch gye means ek hi element reh gya(startIndex == arr.length) jisko check karna hai
+			return true; //ek hi element hai mai means woh sorted hai.
+		}
+		
+		if (input[startIndex] > input[startIndex + 1]) {
+			return false;
+		}
+		
+		//pehle do ko check karliye ab humne n-1 size ke proble pe kam karna hai
+		boolean smallAns = checkSortedBetter(input, startIndex + 1);
+		return smallAns;
+	}
+
+	public static boolean checkSortedBetter(int input[]) {
+		return checkSortedBetter(input, 0);
+
+	}
+
+
+	public static void main(String[] args) {
+		int input[] = {1,2,3};
+		System.out.println(checkSortedBetter(input,0));
+
+	}
+}
