@@ -1,0 +1,11 @@
+Linear Search
+
+The worst case time complexity of Linear search is :
+
+Options
+O(n) 
+O(n^2)
+O(nlogn)
+O(logn)
+
+Correct Answer: O(n) 
