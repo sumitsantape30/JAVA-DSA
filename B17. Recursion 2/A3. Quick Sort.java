@@ -1,4 +1,30 @@
+Quick Sort Code
 
+Sort an array A using Quick Sort.
+Change in the input array itself. So no need to return or print anything.
+
+Input format :
+Line 1 : Integer n i.e. Array size
+Line 2 : Array elements (separated by space)
+Output format :
+Array elements in increasing order (separated by space)
+	
+Constraints :
+1 <= n <= 10^3
+
+Sample Input 1 :
+6 
+2 6 8 5 4 3
+Sample Output 1 :
+2 3 4 5 6 8
+	
+Sample Input 2 :
+5
+1 5 2 7 3
+Sample Output 2 :
+1 2 3 5 7 
+	
+Code:
 public class Quick_Sort {
 
 	//array ko do parts mai break karna hai to hum range rakhlene( yaha shuru karna hai and yaha end) so sI and eI
@@ -44,7 +70,7 @@ public class Quick_Sort {
 			//har ek element ko check karenge ki kya woh pivot se chota hai, agar pivot se chota nhi hai to yeh left side mai nhi hona chahiye, right mai bhi aisa koi element hoga jo pivot se chota so uske sath isko swap karenge. So hum pichese dhundenge jiske sath hum swap kar skte hai
 			if (input[i] <= pivot) {
 				i++;
-			} else if (input[j] >= pivot) {
+			} else if (input[j] > pivot) {
 				j--;
 			} else {// if both are false then swap the value
 				temp = input[j];
