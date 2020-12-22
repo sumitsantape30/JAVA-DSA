@@ -1,0 +1,20 @@
+Time Complexity of Code
+Send Feedback
+What will be the Time Complexity of following code in terms of ‘n’ ?
+Note : Assume k to be a constant value
+
+Refer the same code in Java -
+for(int i = 0; i < n; i++){
+       for(int j = 1 ; j < k; j++){
+         System.out.println(i + j);
+       }
+}
+
+Options
+O(n^2)
+O(n) 
+O(logn)
+None of these
+
+Correct Answer
+O(n) 
