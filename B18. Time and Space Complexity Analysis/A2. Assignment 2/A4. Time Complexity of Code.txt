@@ -1,0 +1,17 @@
+Time Complexity of Code
+
+What will be the Time Complexity of following code in terms of ‘n’ ?
+
+for(int i = 0; i < n; i++){
+    for(; i < n; i++){
+        System.out.println(i);
+    }
+}
+
+Options
+O(n) 
+O(n^2)
+O(logn)
+O(nlogn)
+
+Correct Answer: O(n) 
