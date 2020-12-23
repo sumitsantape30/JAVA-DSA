@@ -1,0 +1,11 @@
+Interface
+
+Which of the following is a correct interface?
+
+Options
+interface A { void print() { } }
+abstract interface A { print(); }
+abstract interface A { abstract void print(); { }}
+interface A { void print(); } 
+
+Correct Answer:interface A { void print(); } 
