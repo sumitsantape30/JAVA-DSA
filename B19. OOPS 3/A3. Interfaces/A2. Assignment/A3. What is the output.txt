@@ -1,0 +1,30 @@
+What is the output
+
+interface A{
+    public void method();
+}
+class One{
+    public void method(){
+        System.out.println("Class One method");
+    }
+}
+class Two extends One implements A{
+    public void method(){
+        System.out.println("Class Two method");
+    }
+}
+public class Solution extends Two{
+    public static void main(String[] args){
+        A a = new Two();
+        a.method();     
+    }
+}
+
+Options
+will print Class One method
+will print Class Two method 
+compiles fine but print nothing
+Compilation Error
+None
+
+Correct Answer:will print Class Two method 
