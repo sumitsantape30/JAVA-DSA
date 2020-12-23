@@ -1,0 +1,9 @@
+Final constructor
+
+Can we declare constructors as final?
+
+Options
+Yes
+No 
+
+Correct Answer: No
