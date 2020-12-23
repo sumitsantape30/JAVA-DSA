@@ -1,0 +1,11 @@
+Abstract method
+
+Which of the following declares an abstract method in an abstract Java class?
+
+Options
+public abstract method();
+public abstract void method(); 
+public void abstract Method();
+public void method() {}
+
+Correct Answer: public abstract void method(); 
