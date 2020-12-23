@@ -1,0 +1,11 @@
+Final class
+
+Final class means -
+
+Options
+It cannot have non-final members
+It cannot be extended 
+Its objects cannot be created
+All
+
+Correct Answer:It cannot be extended 
