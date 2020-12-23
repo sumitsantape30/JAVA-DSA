@@ -1,0 +1,12 @@
+Prevent inheritance
+
+Which of these keywords can be used to prevent inheritance of a class?
+
+Options
+super
+final 
+constant
+none
+
+Correct Answer: final 
+
