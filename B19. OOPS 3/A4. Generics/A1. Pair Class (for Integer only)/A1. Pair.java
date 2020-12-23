@@ -1,24 +1,31 @@
 package Generics;
 
-public class PairUse {
-
-	public static void main(String[] args) {
+//just one class which is generic jiske andar hum kisibhi type ka data store kar payenge.
+public class Pair<T> { //hume iss class keliye likhna hoga ki yeh generic hai, iske bad Pair class assume karlegi T hum badme batayenge
+	//Jab muje Pair chahiye hoga integer type ka, to mai T ki jagah Integer dunga, object banate time i'll decide muje class ke andar exact kis type ka data chahiye
+	
+	//jab muje actually pair banana hoga mai us time bataunge T integer hai ya string hai, abhi class ban rhi hai, jab class ban rhi hoti hai tab actual object nhi bante hai, jab mai new keyword use krke kuch banaunga tab actual object bante hai, jab actual objects ban rhe honge mai us time T kya hai bataunga.
+     private T first; //feeling is, 'first' jo h yeh T type ka hai kuch 
+     private T second; //Second jo h yeh T type ka h kuch
     
-		//Pair banate waqt hume batana chahiye hum kis type ka data class mai dalna hai, and jo nya pair hoga woh bhi string type ka hoga.
-		Pair<String> p=  new Pair<String>("ab","cd");// humne ek pair banaya hai, string type ka 
-		p.setFirst("def"); //p.setFirst ab by default String hi input lega.
-		
-		//p.getFirst() bhi ab by default String hi return karega so I can put it inside a string
-		String s= p.getFirst();
-		
-		//when you are creating a Pair, you can create a Pair of whatever type you want to create it of
-        
-		//primitive datatype ko hum generic mai nhi de skte but har primitive datatype ke corresponding ek superficial class bani hui hai
-		//Pair<int> p1= new Pair<integer>(2,3); -- yeh nhi chalga, tum int type ka pair nhi bana skte coz it's primitive datatype, it's not object, hum sirf object ke sub classes ka bana skte hai
-		Pair<Integer> p1= new Pair<Integer>(1,2); //Integer creates an object
-		
-		//Character type ka pair
-		Pair<Character> c1= new Pair<>('a', 'b'); //second bracket<> ke andar maine Character nhi likha, jaisehi left side mai Character dikhega woh apne aap assume karlega right mai Character
-	}
-
+     public Pair(T first,T second) {
+    	 this.first= first;
+    	 this.second= second;
+     }
+     
+     public T getFirst() {
+    	 return first;
+     }
+     
+     public void setFirst(T first) {
+    	 this.first= first;
+     }
+     
+     public void setSecond(T second) {
+    	 this.second= second;
+     }
+     
+     public T getSecond() {
+    	 return second;
+     }
 }
