@@ -1,0 +1,28 @@
+What is the output
+
+interface calculate {
+    void cal(int item);
+}
+class display implements calculate {
+    int x;
+    public void cal(int item) {
+        x = item * item;           
+    }
+}
+class Solution {
+    public static void main(String args[]) {
+        display arr = new display();
+        arr.x = 0;     
+        arr.cal(2);
+        System.out.print(arr.x);
+    }
+}
+
+Options
+0
+2
+4 
+None
+
+Correct Answer:4 
+
