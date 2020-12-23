@@ -1,0 +1,15 @@
+Correct Statement
+
+Chose the correct statement for the code given below -
+
+public class Student{
+    public abstract double numberOfStudent();
+}
+
+Options
+The keywords public and abstract cannot be used together.
+The method numberOfStudent() in class Student must have a body.
+You must add a return statement in method numberOfStudent().
+Class Student must be defined abstract. 
+
+Correct Answer: Class Student must be defined abstract. 
