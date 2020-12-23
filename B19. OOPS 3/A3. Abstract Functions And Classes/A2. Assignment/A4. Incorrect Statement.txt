@@ -1,0 +1,11 @@
+Incorrect Statement
+
+Which one of the following is not true?
+
+Options
+A class containing abstract methods is called an abstract class.
+Abstract methods should be implemented in the non-abstract derived class.
+An abstract class cannot have non-abstract methods 
+None of the above.
+
+Correct Answer: An abstract class cannot have non-abstract methods 
