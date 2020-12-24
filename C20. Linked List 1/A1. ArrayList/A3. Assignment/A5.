@@ -1,0 +1,20 @@
+Figure out the correct statement
+
+Consider the following code:
+
+ArrayList<String> list = new ArrayList<String>() ;
+list.add( "Ant" );
+list.add( "Bat" );
+list.add( "Car" );
+list.add( "Door" );
+list.add( "Euro" );
+
+Which of the following statements will replace the element "Car" with "Bus" ?
+
+Options
+list[2] = "Bus" ;
+list.add( "Bus", list.indexOf("Car") );
+list.set( 2, "Bus" ); 
+list.set( "Bus", "Car" );
+
+Correct Answer: list.set( 2, "Bus" ); 
