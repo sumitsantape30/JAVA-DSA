@@ -1,0 +1,11 @@
+Collection class for Dynamic array
+
+Which of these standard collection classes implements a dynamic array?
+
+Options
+AbstractList
+AbstractSet
+Arraylist
+ArrayList 
+
+Correct Answer:ArrayList 
