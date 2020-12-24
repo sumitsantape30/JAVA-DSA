@@ -1,0 +1,12 @@
+Size of ArrayList
+
+Which of these method of ArrayList class is used to obtain present size of an ArrayList object?
+
+Options
+length()
+size() 
+capacity()
+index()
+
+Correct Answer: size() 
+
