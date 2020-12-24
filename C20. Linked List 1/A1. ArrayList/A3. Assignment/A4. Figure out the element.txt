@@ -1,0 +1,13 @@
+Figure out the element
+
+Consider the following code:
+
+ArrayList<String> list = new ArrayList<String>() ;
+list.add( "apple" );
+list.add( "banana" );
+list.add( "carrot" );
+list.add( 0, "mango" );
+
+What element will be at index 2 of the list?
+
+Answer: banana
