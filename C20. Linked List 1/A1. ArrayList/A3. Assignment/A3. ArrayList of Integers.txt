@@ -1,0 +1,11 @@
+ArrayList of Integers
+
+Which of the following declarations would be correct for a list that will contain Integers?
+
+Options
+ArrayList<String> list = new ArrayList<String>() ;
+ArrayList<int> list = new ArrayList<int>() ;
+ArrayList list = new ArrayList() ;
+ArrayList<Integer> list = new ArrayList<Integer>() ; 
+
+Correct Answer: ArrayList<Integer> list = new ArrayList<Integer>() ; 
