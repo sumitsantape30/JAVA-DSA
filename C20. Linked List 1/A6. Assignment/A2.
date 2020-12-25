@@ -1,0 +1,12 @@
+Add element at last
+
+Consider the Singly linked list having n elements. What will be the time taken to add an node at the end of linked list if is initially pointing to first node of the list.
+That is only head is given to you.
+
+Options
+O(n) 
+O(1)
+O(nlogn)
+O(n^2)
+
+Correct Answer: O(n) 
