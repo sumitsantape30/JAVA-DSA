@@ -1,0 +1,11 @@
+Search in LL
+
+What will be the time complexity of searching an element in the linked list ?
+
+Options
+O(1)
+O(n) 
+O(nlogn)
+O(n^2)
+
+Correct Answer:O(n) 
