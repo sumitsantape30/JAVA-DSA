@@ -1,0 +1,11 @@
+Linked List Usecase
+
+Linked List are best suited:
+
+Options
+for relatively permanent collections of data.
+for the size of the structure is constantly changing. 
+for random Access of elements
+None of these
+
+Correct Answer: for the size of the structure is constantly changing. 
