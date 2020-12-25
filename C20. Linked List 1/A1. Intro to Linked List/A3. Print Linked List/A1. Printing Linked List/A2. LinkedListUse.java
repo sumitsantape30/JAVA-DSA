@@ -4,8 +4,8 @@ public class LinkedListUse {
 
 	public static void main(String[] args) {
 
-		//in teen statements se memory mai 3 nodes banenge and three variables referring to those three node.
-		Node<Integer> node1= new Node<>(10);
+	//in teen statements se memory mai 3 nodes banenge and three variables referring to those three node.
+        Node<Integer> node1= new Node<>(10);
         Node<Integer> node2= new Node<>(20);
         Node<Integer> node3= new Node<>(30);
         node1.next= node2;
@@ -24,6 +24,6 @@ public class LinkedListUse {
         } 
         //head ek node ko point kr rha hai, us node ka data print karega, aage badh jao, head ko ek ek krke aage move kr rhe hai
 	    //Arrays mai ek step age badhne keliye i++ krte the yaha head= head.next krke le rhe honge.
-	}
+    }
 
 }
