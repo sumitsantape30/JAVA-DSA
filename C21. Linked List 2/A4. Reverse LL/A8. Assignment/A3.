@@ -1,0 +1,16 @@
+Double LL
+
+Given an unsorted doubly Linked List, suppose you have references (or pointer) to its head and tail nodes, which of the following operation can be implemented in O(1) time ?
+
+i) Insertion at the front of the linked list
+ii) Insertion at the end of the linked list
+iii) Deletion of the last node of the linked list
+iv) Deletion of the front node of the linked list
+
+Options
+I and II
+I and III
+I,II and III
+I,II, III and IV 
+
+Correct Answer: I,II and III
