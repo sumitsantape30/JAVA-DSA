@@ -1,0 +1,14 @@
+Correct statement
+
+Which of the following statement(s) about stack data structure is/are NOT correct?
+
+Options
+Stack data structure can be implemented using linked list
+New node can only be added at the top of the stack
+Stack is the FIFO data structure 
+New node can be added at both ends 
+
+Correct Answer: 
+Stack is the FIFO data structure 
+New node can be added at both ends 
+
