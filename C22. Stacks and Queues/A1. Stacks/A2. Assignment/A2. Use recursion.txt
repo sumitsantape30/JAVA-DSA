@@ -1,0 +1,10 @@
+Use recursion
+
+Which data structure is used for implementing recursion?
+Options
+Queue
+Stack 
+Array
+List
+
+Correct Answer: Stack
