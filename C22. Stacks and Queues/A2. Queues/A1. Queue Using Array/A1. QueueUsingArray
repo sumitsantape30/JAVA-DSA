@@ -1,0 +1,110 @@
+package QueueUsingArray;
+
+public class QueueUsingArray {
+	
+	//inko private rakhenge taki object banane ke bad isko koi change na krde
+	private int data[]; //Queue Using array ka rhe hai to obviously ek chahiye
+   //hum deletion and insertion queue mai front and rear end se karre honge so woh bhi chahiye 
+	private int front; // front end se elements remove honge, so front element will be stored at this index
+	private int rear; //rear end se elements add honge, so rear element will be stored at this index
+	private int size; // strack mai size top se nikal jati thi coz se top end sehi operations ho rhe the but queues mai dono side se operations ho rhe hai so size rakhenge
+	
+	public QueueUsingArray() { //QueueUsingArray ka constructor
+		//jab object create hoga QueueUsingArray class ka to woh 10 size ka array banayega and initially queue khali hai so front and rear -1 pe rahega. 0 nhi dal skte coz front zero pe hai means array ke 0th index pe koi element hai
+		data= new int[10];
+		front= -1;
+		rear= -1;
+		size= 0;
+	}
+	
+	//Agar Queue ki capacity user se lena hai to ek aur constructor bana skte hai, user can specify ki usko kitne capacity ki queue chahiye
+	public QueueUsingArray(int capacity) {
+		data= new int[capacity]; //jitni capacity ki queue user ko banani utni capacity ka array bana denge
+		front= -1;
+		rear= -1;
+		size= 0;
+	}
+	
+    int size() { //this size means number of elements in the queue, jab bhi koi element insert karenge to size++ karenge aur delete karte waqt size-- karenge
+    	return size;
+    }
+    
+    boolean isEmpty() { // size zero hogi to queue khali hai
+    	return (size==0);
+    }
+    
+    int front() throws QueueEmptyException {//queue ke front pe jo element hai woh return karra hoga
+    	
+    	//agar queue ka size zero hoga to front -1 hoga, ab -1 index pe jake read karoge to indexOutOfBound aajayega so exception throw karenge
+		if (size == 0) {
+			QueueEmptyException e = new QueueEmptyException();
+			throw e;
+		}
+    	return data[front]; //front wala element front ke index pe hoga
+    }
+    
+	int rear() throws QueueEmptyException {
+
+		if (size == 0) {
+			QueueEmptyException e = new QueueEmptyException();
+			throw e;
+		}
+		return data[rear];
+	}
+
+	
+	//iske description keliye open book
+	void enqueue(int element) throws QueueFullException { //enqueue krte time hume ek element milega jo queue mai insert karna hai
+
+		//agar array full hogya hai means jitne elements aa skte utne queue mai dal chuke hai to insertion allow nhi karna hai
+		if (size == data.length) { // jis queue pe hum kam kr rhe hai woh full ho chuki hai aur insertions nhi kr skte
+			QueueFullException e = new QueueFullException();
+			throw e;
+		}
+
+		//size==0 matlab abhi first element insert kar rhe ho so front ko 0th index pe set kardo
+		if (size == 0) { //jab hum first element insert karre honge to front and rear dono bhi 0 pe ana chahiye, coz first element dal rhe to front bhi wahi rahega and rear bhi wahi rahega, uske alawa baki cases mai front change nhi hoga.
+			front = 0;
+		}
+		
+		size++; 		
+		// rear= (rear+1) % data.length; yeh bhi use kr skte hai to reset rear to zero
+		
+		rear++; //insert karna hai aur woh rear pe krte hai so abhi rear ki value jaha pdi hogi (initially -1 thi so usko 0 karni padegi and 0th index pe element dalna padega) usko 1 se increse karna chahiye then insert karna chahiye rear pe
+		
+		if (rear == data.length) { // Circular queue coz  enqueue krte time aage nhi badh pa rhe kyuki array full ho chuka tha so rotate karenge kyuki starting mai to jagah khali hai aur waha insert karenge 
+			rear = 0;
+		}
+
+		data[rear] = element; // data ke rear pe jake element insert kar denge
+
+	}
+
+	//dequeue ke description keliye open book and aage thode pages paltana waha hai :)
+	int dequeue() throws QueueEmptyException { //data return karenge jo remove kiya hai humne
+
+		if (size == 0) { //khali queue pe dequeue nhi call kr skte 
+			QueueEmptyException e = new QueueEmptyException();
+			throw e;
+		}
+
+		int temp = data[front]; //jo data delete karre woh bhi return karna hai so temp mai store karenge badme return karenge
+		front++; //remove krne ke bad front ko aage badhayege
+
+		if (front == data.length) { // \jaisehi front array ke length barabr hoga to we should reset front to 0
+			front = 0;
+		}
+		//front= (front+1)% data.length; yeh bhi use kr skte hai to reset front to zero
+
+		size--; //ek element remove karne ke bad size kam kar denge
+		
+		//size kam karne ke bad agar size 0 hojata hai means woh last element tha jisko remove karne ke bad size zero hua, to hume front and rear ko update kardena chahiye to -1 and -1 
+		if (size == 0) {
+			front = -1;
+			rear = -1;
+		}
+		
+		return temp;
+	}
+	
+}
