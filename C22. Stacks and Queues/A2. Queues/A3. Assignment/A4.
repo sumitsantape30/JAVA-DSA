@@ -1,0 +1,10 @@
+Worst case operation
+
+In linked list implementation of queue, if only front pointer is maintained, which of the following operation take worst case time (i.e. O(n) )?
+Options
+Insertion from rear 
+Deletion from front
+Both
+None
+
+Correct Answer: Insertion from rear (rear end se insert karna hai to pura travel karna padega end tak which takes O(n)
