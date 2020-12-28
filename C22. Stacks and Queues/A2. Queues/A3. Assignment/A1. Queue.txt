@@ -1,0 +1,10 @@
+Queue
+
+A queue is a ?
+Options
+FIFO (First In First Out) list 
+LIFO (Last In First Out) list
+Ordered array
+Linear tree
+
+Correct Answer: FIFO (First In First Out) list 
