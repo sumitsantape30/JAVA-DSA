@@ -1,0 +1,10 @@
+Insert element
+
+In optimized linked list implementation of a queue, where does a new element be inserted?
+Options
+At the head of linked list
+At the tail of the linked list 
+At the centre position in the linked list
+None
+
+Correct Answer: At the tail of the linked list 
