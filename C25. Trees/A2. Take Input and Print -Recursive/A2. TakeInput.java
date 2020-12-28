@@ -58,3 +58,16 @@ public class TakeInput {
 	}
 
 }
+
+Code:
+Enter next node data
+4 2 1 0 2 0
+Enter number of children for 4
+Enter next node data
+Enter number of children for 1
+Enter next node data
+Enter number of children for 2
+4:1,2,
+1:
+2:
+
