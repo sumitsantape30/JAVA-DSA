@@ -1,0 +1,11 @@
+Insert in queue
+
+In linked list implementation of a queue, front and rear pointers are tracked. Which of these pointers will change during an insertion into EMPTY queue?
+
+Options
+Only front pointer
+Only rear pointer
+Both front and rear pointer 
+None
+
+Correct Answer: Both front and rear pointer (Jab first insertion karre honge to initially front and rear dono -1 pe rahenge so unko zero pe leke ana padega so that they bothe points the same first element)
