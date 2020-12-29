@@ -113,3 +113,43 @@ public class NumberOfNodes {
 	}
 
 }
+
+Code:
+
+Enter the root data
+1
+Enter the number of children of1
+3
+Enter the 1th child of 1
+2
+Enter the 2th child of 1
+3
+Enter the 3th child of 1
+4
+Enter the number of children of2
+0
+Enter the number of children of3
+2
+Enter the 1th child of 3
+5
+Enter the 2th child of 3
+6
+Enter the number of children of4
+2
+Enter the 1th child of 4
+8
+Enter the 2th child of 4
+20
+Enter the number of children of5
+0
+Enter the number of children of6
+0
+Enter the number of children of8
+0
+Enter the number of children of20
+0
+1 
+2 3 4 
+5 6 8 20 
+8
+
