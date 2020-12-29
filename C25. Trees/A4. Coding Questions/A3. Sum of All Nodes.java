@@ -25,7 +25,7 @@ public class SumOfNodes {
 	
 	public static int sumofnodes(TreeNode<Integer> root) {
 		
-		if(root == null) {
+		if(root == null) { //yeh basecase nhi hai yad rakhna
 			return 0;
 		}
 		
