@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class TakeInputLevelWise {
 
 	//beacuse hum recusrion use nhi kr rhe hai iske andar so we don't have to pass Scanner, it's okay if this function creates the Scanner itself
-	public static BinaryTreeNode<Integer> takeInputLevelWise(){
+	public static BinaryTreeNode<Integer> takeInputLevelWise() throws QueueEmptyException{
 		Scanner s= new Scanner(System.in);
 		
 		//we need a queue, Queue ke andar binary tree node dalenge, and Binary tree node integer type ka hai
@@ -59,15 +59,15 @@ public class TakeInputLevelWise {
 		return root;		
 	}
 	
-	public static void printLevelWise(BinaryTreeNode<Integer> root) {
-		 Queue<BinaryTreeNode<Integer>> queue = new LinkedList<>();
+	public static void printLevelWise(BinaryTreeNode<Integer> root) throws QueueEmptyException {
+		 QueueUsingLL<BinaryTreeNode<Integer>> queue = new QueueUsingLL<>();
 			
-		   queue.add(root);
+		   queue.enqueue(root);
 		  // queue.add(null);
 			
 		   while ( !queue.isEmpty() ) {
 			    
-			   BinaryTreeNode<Integer> frontNode = queue.poll();
+			   BinaryTreeNode<Integer> frontNode = queue.dequeue();
 			   
 			   
 				   
@@ -76,7 +76,7 @@ public class TakeInputLevelWise {
 			   if ( frontNode.left != null) {
 
 					System.out.print("L:" + frontNode.left.data +",");
-					queue.add(frontNode.left);
+					queue.enqueue(frontNode.left);
 			   } 
 			   else
 			   {
@@ -86,7 +86,7 @@ public class TakeInputLevelWise {
 				if ( frontNode.right != null) {
 
 					System.out.print("R:" + frontNode.right.data );
-					queue.add(frontNode.right);
+					queue.enqueue(frontNode.right);
 				}
 			    else 
 			    {
@@ -97,10 +97,51 @@ public class TakeInputLevelWise {
 		   }
 
 	}
-	public static void main(String[] args)  {
+	
+	public static void main(String[] args) throws QueueEmptyException  {
 
 		BinaryTreeNode<Integer> root= takeInputLevelWise();
 		printLevelWise(root);
 	}
 
 }
+
+Code:
+
+Enter the root data
+1
+Enter left child of 1
+2
+Enter right child of 1
+3
+Enter left child of 2
+4
+Enter right child of 2
+5
+Enter left child of 3
+6
+Enter right child of 3
+7
+Enter left child of 4
+-1
+Enter right child of 4
+-1
+Enter left child of 5
+-1
+Enter right child of 5
+-1
+Enter left child of 6
+-1
+Enter right child of 6
+-1
+Enter left child of 7
+-1
+Enter right child of 7
+-1
+1:L:2,R:3
+2:L:4,R:5
+3:L:6,R:7
+4:L:-1,R:-1
+5:L:-1,R:-1
+6:L:-1,R:-1
+7:L:-1,R:-1
