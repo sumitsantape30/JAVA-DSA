@@ -35,7 +35,7 @@ public class CountLeafNode {
 			return 1;
 		}
 		
-		int count= 0;
+		int count= 0; //root khud leafnode nhi hai isliye zero liya, hum substrees ko bolenge tumhare pas kitne leaf nodes hai batao aur un sabka sum return karenge.
 		for(int i=0; i< root.children.size();i++) {
 			count= count+ countLeafNodes(root.children.get(i));
 		}
