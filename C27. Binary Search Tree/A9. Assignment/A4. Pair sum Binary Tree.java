@@ -1,4 +1,4 @@
-Pair sum BInary Tree
+Pair sum Binary Tree
 
 Given a binary tree and an integer S, print all the pair of nodes whose sum equals S.
 
