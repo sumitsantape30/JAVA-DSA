@@ -10,13 +10,23 @@ public class OurMapUse {
 			System.out.println("i= "+ i + " lf = "+ map.loadFactor());//mai print kr rha hu load factor kaise kaise change ho rha hai
 			//Map class mai numBuckets ko 5 kardiya 20 ki jagah. So ab 4th entry dalte hi rehash hogi, 10 hojayegi buckets
 		}
+		
+			
+		map.removeKey("abc3"); //output mai abc3 ke corresponding null ayega coz hume getValue kithi abc3 ke corresponding but delete hogya hai isliye null dega
+		map.removeKey("abc7");
+		
+		for( int i=0; i< 20; i++) {
+			System.out.println("abc" + i + ":" + map.getValue("abc" + i));
+			//kya kya values insert hui hai mere map mai yeh print karega
+			// it'll print: abc 0 ke corresponging 1 gya hai....and abc 19 ke corresponding 20 gya hai
+		}
 	}
 
 }
 
 
 Output:
-
+//First loop ka output:
 	i= 0 lf = 0.2 //(i ki value zero hogyi hai that  means pehli entry ja chuki hai and load factor 0.2 hogya(size is 1 and number of buckets is 5: 1/5= 0.2))
 	i= 1 lf = 0.4 
 	i= 2 lf = 0.6
@@ -40,3 +50,26 @@ Output:
 	i= 17 lf = 0.45
 	i= 18 lf = 0.475
 	i= 19 lf = 0.5
+
+//Second Loop ka output:
+abc0:1
+abc1:2
+abc2:3
+abc3:null //abc3 ke corresponding null diya hai coz yeh delete ho chuka hai
+abc4:5
+abc5:6
+abc6:7
+abc7:null //abc7 ke corresponding null diya hai coz yeh delete ho chuka hai
+abc8:9
+abc9:10
+abc10:11
+abc11:12
+abc12:13
+abc13:14
+abc14:15
+abc15:16
+abc16:17
+abc17:18
+abc18:19
+abc19:20
+
