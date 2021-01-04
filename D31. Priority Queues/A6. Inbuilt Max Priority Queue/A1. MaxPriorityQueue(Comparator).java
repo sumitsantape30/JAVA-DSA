@@ -51,12 +51,12 @@ public class MaxPriorityQueueUse {
 		
 		//MinPQComparator minComparator= new MinPQComparator(); //For Asscending Order, Output: 0 1 2 5 9
 		
-		MaxPQComparator maxComarator= new MaxPQComparator();// for Descending Order, Output: 9 5 2 1 0 
+		MaxPQComparator maxComparator= new MaxPQComparator();// for Descending Order, Output: 9 5 2 1 0 
 		
 		//yeh max comparator already exist bhi karta hai agar hum nhi banaye khudka, to collection ek class hai uske andar reverseOrder() function hai jo hume Max comparator jaisa ek comparator lake deta hai
 		//PriorityQueue<Integer> pq= new PriorityQueue<>(Collections.reverseOrder()); yeh bhi hume maxComparator jaisahi result lake deta hai
 		
-		PriorityQueue<Integer> pq= new PriorityQueue<>(maxComarator);// yaha hum comparator pass karenge jiske basis pe hum chahte hai ki priority queue ki ordering kaisi ho
+		PriorityQueue<Integer> pq= new PriorityQueue<>(maxComparator);// yaha hum comparator pass karenge jiske basis pe hum chahte hai ki priority queue ki ordering kaisi ho
 		
 		//ek array lete hai and uske elements ko priority queue mai insert krte hai
 		int arr[] = {5,1,9,2,0};
