@@ -23,35 +23,48 @@ Sample Output :
 
 Code:
 
+package InbuildPriorityQueue;
 import java.util.ArrayList;
 import java.util.PriorityQueue;
-public class Solution {
 
-	public static ArrayList<Integer> kLargest(int input[], int k) {
-		/* Your class should be named Solution
-		* Don't write main().
-		* Don't read input, it is passed as function argument.
-		* Return output and don't print it.
-		* Taking input and printing output is handled automatically.
-		*/
+public class KLargestElement {
+	
+	public static void KLargest(int arr[], int k){
+		
+		//Out of all theavailable options minimum element konsa hai aur fir use muje remove karna hai so yeh kam karne keliye hum queue ka ser krenge
 		PriorityQueue<Integer> pq = new PriorityQueue<>();
-		   int i = 0;
-		   for( ; i < k; i++ ) {
-			   pq.add( input[i] );
-		   }
-		   
-		   for( ; i < input.length; i++ ) {
-			   if( pq.peek() < input[i] ) {
-				   pq.remove();
-				   pq.add(input[i]);
-			   }
-		   }
-		   
-		   ArrayList<Integer> largest = new ArrayList<>();
-		  while( !pq.isEmpty() ) {
-			   largest.add(pq.remove());
-		  }
-		   
-		  return largest;
+
+		//First 'k' elements ko uthake qeue mai insert kar denge
+		int i = 0;
+		for (; i < k; i++) {
+			pq.add(arr[i]);
+		}
+		
+		// humne'K' elements apne pas rakh liye ki yeh K largest elements hai 
+		for (; i < arr.length; i++) {
+			int min= pq.element(); //yeh hume queueu mese minimum element lake de dega
+			
+			if (min < arr[i]) { //I'll check if this minimum element is small than current element is the array
+				//agar aisa hua to queue mese minimum element ko delelte kar dena chahiye
+				pq.remove(); 
+				pq.add(arr[i]); //aur currentl element ko qeueu mai dal dena chahiye
+			}
+		}
+		
+		//jab yeh hojayega ab finally mere queue mai K largest elements hi pde honge bas
+
+		//jabtak queue khali nhi hoti tabtak elements nikalte jayenge priotiy queue se aur unhe ek line mai print kara dete hai
+		while (!pq.isEmpty()) {
+			System.out.println( pq.remove());
+		}
+
 	}
+
+	public static void main(String[] args) {
+
+		int arr[]= {2, 15, 8, 9, 12, 13, 20};
+		KLargest(arr, 3);
+		
+	}
+
 }
