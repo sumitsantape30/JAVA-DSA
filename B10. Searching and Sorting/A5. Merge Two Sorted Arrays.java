@@ -47,11 +47,11 @@ Code:
 package array;
 
 public class mergingSorted_Array {
-	public static int[] merge(int arr1[], int arr2[]) { //input should be the arrays that we plan to merge. And return type should be the in which we are merging them.
+	public static int[] merge(int arr1[], int arr2[]) { //input should be the arrays that we plan to merge. And return type should be the the array in which we are merging them.
 		
 		int i=0;//index of first array
 		int j=0; // index of second array
-		int k=0; //to keep the track ki muje third array mai kis index pe insrt karna hai
+		int k=0; //to keep the track ki muje third array mai kis index pe insert karna hai
 		
 		int ans[]= new int[arr1.length+arr2.length];// third array, it's size will be sum of size of both the arrays.
 		
@@ -69,9 +69,9 @@ public class mergingSorted_Array {
 			}
 		} 
 		
-		//is loop ke bahar aye matlab dono mese ek array pura scan ho chuka hai aur dusre array ke element bache hai
+		//is loop ke bahar aye matlab dono mese ek array pura scan ho chuka hai aur dusre array ke kuch elements bache hai
 		
-		while(i< arr1.length) { // agar second array pura scan ho chuka hai to first array ke saare elements put kar denge as it is coz woh sorted hai
+		while(i< arr1.length) { // agar second array pura scan ho chuka hai to first array ke saare elements ko aisehi put kar denge as it is, coz woh already sorted hai
 			ans[k]= arr1[i];
 			k++;
 			i++;
