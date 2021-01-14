@@ -44,7 +44,7 @@ package array;
 public class insertionSort {
 	public static void insertionSort(int arr[]) { //input will be array
 		
-		//I have to divide my array into two parts one is sorted part and other is unsortes part. I'll pick one element from unsorted and insert it in sorted part before that we'll compare.
+		//I have to divide my array into two parts one is sorted part and other is unsorted part. I'll pick one element from unsorted and insert it in sorted part before that we'll compare.
 		// Jo 0th index pe element hai usko sorted consider krte hai and i+1 se saare unsorted.
 		for (int i = 1; i < arr.length; i++) { //first element in the usorted part will be at index 1 aur jabtak last element pe nhi pohoch jate tabtak karna hai
 
@@ -53,9 +53,9 @@ public class insertionSort {
 			
 			while (j >= 0 && arr[j] > temp) { //shifting ka kam karenge jabtak j>= 0 hai and jabtak array ke j pe element pda hai woh bada hai temp(jo element insert karna hai) se tabhi shift karenge
 				arr[j + 1] = arr[j]; //shift karne keliye j pe jo element hai usko j+1 pe dal dena chahiye
-				j--; // ab j kam ho jayega
+				j--; // humne ek ko aage shift kiya so ab j index kam hona chahiye
 			}
-			arr[j + 1] = temp; // j kam ho chuka hai to ek position piche agya aye waha insert kar denge
+			arr[j + 1] = temp; // j ka kam ho chuka hai to ek position piche agya aye waha insert kar denge
 		}
 
 	}
