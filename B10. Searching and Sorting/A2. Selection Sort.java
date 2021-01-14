@@ -16,14 +16,14 @@ public class Selection_sort {
 				
 			//ab remaining array mai scan karna padega  so i+1 se end tak har element pe jayenge and har element se compare karenge.
 			for (int j = i + 1; j < input.length; j++) {
-				if (input[j] < min) { // agar next wala element chota hai mere purane minimum se to usko and minIndex ko update kardena chahiye.
+				if (input[j] < min) { // agar next wala element chota hai mere purane minimum ko and uske minIndex ko update kardena chahiye.
 					min = input[j];
 					minindex = j;
 				}
 			}
 			
 			// After first loop I can assume ki min mai minimum element hoga and minIndex mai uss element ka index hoga so muje swap kardena chahiye
-			if (minindex != i) { // swap tabhi karenge jab minIndex aur i equal na ho
+			if (minindex != i) { // swap tabhi karenge jab minIndex aur i equal na ho, agar minIndex aur i equal hai means same ek hi element ko swap karre which isn't possible 
 				input[minindex] = input[i]; // jo new minimum ka minindex hoga uske place pe purana wala minimum (jo assume kiya tha) usko dal denge
 				input[i] = min; //ith position pe humko minimum chahiye tha so old wale ke place pe new min dal denga.
 			}
