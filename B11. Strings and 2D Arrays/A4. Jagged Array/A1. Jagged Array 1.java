@@ -46,7 +46,7 @@ public class jaggedArray1 {
 			System.out.println(arr2[i]);
 		}
 		
-		System.out.println(arr2[0][0]); //ab muje zero milega and no null pointer exception coz mere pas array ready hai
+		System.out.println(arr2[0][0]); //ab muje zero milega and not null pointer exception coz mere pas array ready hai
 Output:
 [[I@15db9742
 null
