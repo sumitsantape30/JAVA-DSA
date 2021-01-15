@@ -4,7 +4,7 @@ public class Student {
 
 	//yeh student class/template ki properties hai
 	String name;
-	 public int rollNo;
+	public int rollNo;
 	 
 	 
 	 // humara roll no private hai so usko class ke bahar koi access nhi kr skta neither change kr skta to private krke fayda kya,
