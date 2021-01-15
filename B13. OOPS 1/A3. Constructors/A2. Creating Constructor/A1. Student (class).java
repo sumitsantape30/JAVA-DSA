@@ -2,11 +2,11 @@ package Restart;
 
 public class Student {
 
-	//by default when you create a student all the properties that you have here gets initialized by zero, string ke case mai null.
+	//by default when you create a student object all the properties that you have here gets initialized by zero, string ke case mai null.
 	       String name;
-	 public int rollNo;
+	 private int rollNo;
 	 
-	 // I should not allow anyone to create student(class) without name and rollNo. matlab agar tume object create karna hai to yeh chiz chahiye hi
+	 // I should not allow anyone to create student(object) without name and rollNo. matlab agar tume object create karna hai to yeh chiz chahiye hi
 	 // so, I want my student(class) to take name and rollNo only then allow to create a student(object)
 	 public Student( String n, int rn) {
 		 name= n; //setting rollNo and Name with whatever the values user is passing 
