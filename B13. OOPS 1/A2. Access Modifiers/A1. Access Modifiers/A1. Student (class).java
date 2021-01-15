@@ -8,7 +8,7 @@ public class Student {
 	 
 	 
 	 // humara roll no private hai so usko class ke bahar koi access nhi kr skta neither change kr skta to private krke fayda kya,
-	 // hum isme kuch functionalities add karenge, and in fucntions ke through access denge
+	 // hum isme kuch functionalities add karenge, and in functions ke through access denge
 	 
 	 public void setRollNumber( int rn) { //this is the way through which we can change the roll no, yeh function public hai so isko class ke bahar access krke isme input deke roll number change kr skte hai
 		 
