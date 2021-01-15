@@ -1,6 +1,6 @@
 public class Student {
 
-	//by default when you create a student all the properties that you have here gets initialized by zero, string ke case mai null.
+	//by default when you create a student object all the properties that you have here gets initialized by zero, string ke case mai null.
 	       String name;
 	 public int rollNo;
    
