@@ -7,7 +7,7 @@ public class Student {
 	public int rollNo;
 	 
 	 
-	 // humara roll no private hai so usko class ke bahar koi access nhi kr skta neither change kr skta to private krke fayda kya,
+	 // humara roll no private hai so usko class ke bahar koi access nhi kr skta neither change kr skta to private krke fayda kya, we can keep control to ourselves ki user ne positive number hi input dena chahiye hum aisi condtions laga skte hai
 	 // hum isme kuch functionalities add karenge, and in functions ke through access denge
 	 
 	 public void setRollNumber( int rn) { //this is the way through which we can change the roll no, yeh function public hai so isko class ke bahar access krke isme input deke roll number change kr skte hai
