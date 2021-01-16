@@ -5,7 +5,7 @@ public class Student {
 	String name;
 	private final int rollNo;
 
-	//Jab data member aur local variable same ho to data memeber ko access karne keliye we use this.
+	//Jab data member aur local variable same ho to data memeber ko access karne keliye we use this keyword.
 	public Student(String name, int rollNo) {
 		this.name = name;
 		this.rollNo = rollNo;
