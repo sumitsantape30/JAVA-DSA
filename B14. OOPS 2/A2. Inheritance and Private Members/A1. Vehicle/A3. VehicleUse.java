@@ -12,7 +12,7 @@ public class VehicleUse {
 		Car c= new Car();
 		c.color= "Blue";
 		c.numGears= 10; //yaha numGears access kr pa rhe coz woh default hai so same package mai access set kr pare
-        c.setmaxSpeed(88);
+                c.setmaxSpeed(88);
 		c.color= "Blue"; //hum vehicle ki property Car keliye use karre coz car extends Vehicle
        
 		c.print(); // agar print() function Car mai nhi hota to woh Vehicle wala print() function call krti.
