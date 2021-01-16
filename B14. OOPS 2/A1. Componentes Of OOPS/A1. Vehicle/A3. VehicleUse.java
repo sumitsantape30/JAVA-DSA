@@ -9,11 +9,9 @@ public class VehicleUse {
 		
 		Car c= new Car();
 		c.numGears= 10; //yaha numGears access kr pa rhe coz woh default hai so same package mai access set kr pare
-        c.color= "Blue"; //hum vehicle ki property Car keliye use karre coz car extends Vehicle
-        c.print(); //hum vehicle ke functions bhi apne liye use kr skte hai
-        
+                c.color= "Blue"; //hum vehicle ki property Car keliye use karre coz car extends Vehicle
+                c.print(); //hum vehicle ke functions bhi apne liye use kr skte hai
 	}
-
 }
 
 Output:
