@@ -38,7 +38,7 @@ isConvertible : false
 		}else {
 			v= new Vehicle(20);
 		}
-		v.isCovertible(); // error dega -- compiler ko pta hi nhi hai car banega ki vehicle banegi but compiler doesn't cares woh bas v type ki chize access karne dega baki nhi karne dega
+		v.isCovertible(); // error dega -- compiler ko pta hi nhi hai car banega ki vehicle banegi but compiler doesn't cares woh bas v type ki chize access karne dega baki nhi karne dega, and hum subclass ki properties access nhi kr skte hum vas parent class ki properties access kr skte hai as we wrote Vehicle v
 		v.print();
 		
 	}
