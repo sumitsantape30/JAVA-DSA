@@ -7,7 +7,7 @@ public class VehicleUse {
 		//Vehicle v= new Vehicle(10); //jab mai yeh object create kar rha hu to vehicle ka constructor call hoga.
 		// Output: Vehicle Constructor
 		
-      //when you created car object this vehicle object was also getting created, mere isme automatic vehicle crete ho rha hai to woh default constructor( new vehicle()) call karneki koshish kr rha hai
+      //when you created car object this vehicle object was also getting created, mere isme automatic vehicle create ho rha hai to woh default constructor( new vehicle()) call karneki koshish kr rha hai
 		// since vehicle object is getting created but humne wahaka default constructor gayab kardiya
 		Car c= new Car(100); //jab mai yeh object create kar rha hu to car ka constructor call hoga.
 	   //Output:Vehicle Constructor
