@@ -3,7 +3,7 @@ public class CheckSorted2 {
 
 //Approach 2
 	//iss Approch mai pehle n-1 size ki problem solve karne se pehle hum pehle do elements ko compare krte hai, 
-	//agar yahi dono arranged nhi honga to n-1 size ki problem ko solve karne ki jarurat hi nhi hai coz humare pehlese result hoga that's false
+	//agar yahi dono arranged nhi honga to n-1 size ki problem ko solve karne ki jarurat hi nhi hai coz humare pas pehlese result hoga that's false
    public static boolean checkSorted_2(int input[]){
 		
 		if(input.length <= 1){
