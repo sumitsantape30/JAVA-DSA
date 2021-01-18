@@ -1,8 +1,14 @@
+package P2;
+
+import java.util.Scanner;
+
+public class Code {
+
 // Approach 3
  
-// jis windows keliye checkSorted check karna hai uske liye harbar nya array nhi banayenge, uskeliye keliye harbar start rakh lete hai (ki yaha se yahatk karna hai)
-// startIndex will tell me ki kis range mai check karna hai ki array sorted hai ya nhi
- // This function checks if the array is sorted from startIndex to end
+       // jis windows keliye checkSorted check karna hai uske liye harbar nya array nhi banayenge, uskeliye keliye harbar start rakh lete hai (ki yaha se yahatk karna hai)
+       // startIndex will tell me ki kis range mai check karna hai ki array sorted hai ya nhi
+        // This function checks if the array is sorted from startIndex to end
 	public static boolean checkSortedBetter(int input[], int startIndex) { //
 
 		//iss case mai humare length change nhi hori so basecase length se related nhi rahegi, rather hum startIndex se related kam karre and woh change hori so startIndex related basecase rahegi.
