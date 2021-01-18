@@ -47,14 +47,14 @@ public class Quick_Sort {
 		int count = 0; //agar 3 elements pivot se chote hai, to muje pehle 3 places chhod dene chahiye and then pivot ko dal dena chahiye. so hum startindex se endindex tak scan karenge hum find out karenge kitne aise element hai jo pivot se chote hai ya equal hai woh count karlenge
 		int pivot = input[sI]; // jis range ki bat karre( sI to eI) uske first element ko pivot consider karre.
 		
-		for (int i = sI + 1; i <= eI; i++) {
+		for (int i = sI + 1; i <= eI; i++) { // humne jo first element hai usko pivot consider kar liya ab pure array mai dhundenge ki apne pivot se total kitne elements chote hai and then utne elements ko chhodke hum apne pivot ko place karenge
 			if (input[i] <= pivot) {
 				count++;
 			}
 		}
 		
 		// to place pivot at particular position
-		int pivotPos = sI + count; //statIndex ko pakad ke uske badd ka smaller elements ka jitna count aya uske bad wali pivotPos rahegi.
+		int pivotPos = sI + count; //startIndex ko pakad ke uske badd ka smaller elements ka jitna count aya uske bad wali pivotPos rahegi.
 		//swap karenge sI ke element se pivotPos ke old element se
 		int temp = input[pivotPos];
 		input[pivotPos] = input[sI];
@@ -70,7 +70,7 @@ public class Quick_Sort {
 			//har ek element ko check karenge ki kya woh pivot se chota hai, agar pivot se chota nhi hai to yeh left side mai nhi hona chahiye, right mai bhi aisa koi element hoga jo pivot se chota so uske sath isko swap karenge. So hum pichese dhundenge jiske sath hum swap kar skte hai
 			if (input[i] <= pivot) {
 				i++;
-			} else if (input[j] > pivot) {
+			} else if (input[j] > pivot) { //hum isliye do if condtions lagare take dono side aisa element aajaye jo left side mai pivot se chota nhi aur right side mai pivot se bada nhi taaki dono ko swap kr sake
 				j--;
 			} else {// if both are false then swap the value
 				temp = input[j];
