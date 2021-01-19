@@ -11,7 +11,7 @@ public class ReturnSubsequences {
 		
 		String smallans[] = findSubsequences(str.substring(1)); // suppose 'xyz' hai to pehle saare 'yx' ke subsequences mangwa lenga smallans mai.
 		String ans[] = new String[2 * smallans.length];//yeh final array hai jisme humara answer hoga. Jitni length hai smallans ki us length ka double kam karre pehla kam usko copy karna and dusra kam un sabke aage first character append karna.
-        int k=0; //k ans array ka index hai
+                int k=0; //k ans array ka index hai
 		//smallans ke jobhi subsequences the unko copy karre ans(final) array mai as it it copy karenge.
 		for (int i = 0; i < smallans.length; i++) {
 			ans[k] = smallans[i]; //humare ans array ke kth index pe smallans ke ith elements exactly copy karna hai
