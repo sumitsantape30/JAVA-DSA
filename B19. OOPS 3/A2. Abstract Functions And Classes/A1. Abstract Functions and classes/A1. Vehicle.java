@@ -1,5 +1,10 @@
 package final_keyword;
 
+/* Abstract classes and methods are when the parent class has a named method, but need its child class(es) to fill out the tasks. 
+An abstract class is a class that contains at least one abstract method. An abstract method is a method that is declared, but not implemented in the code.
+*/
+
+
    //4. humare class mai ek function hai jo incomplete hai(isMotorized function), so humari class complete nhi hai so tumhe class level pe bhi bolna padega ki jo vehicle class hai woh abstract hai 
 public abstract class Vehicle { //3. yeh class abstract kiya coz iske andar ek abstract function hai
 	protected String color;
