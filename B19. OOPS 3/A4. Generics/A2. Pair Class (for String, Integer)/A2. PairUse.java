@@ -30,14 +30,14 @@ public class PairUse {
 		Pair<Pair<Integer,Integer>, Integer> p3= new Pair<>(internalPair, c); //iss constructor ko do argument chahiye pehle argument mai ek pair chahiye and dusre argument mai ek integer chahiye
 	    
 		//printing 3rd integer
-        System.out.println(p3.getSecond()); //Output: 23 (3rd Integer)
+                System.out.println(p3.getSecond()); //Output: 23 (3rd Integer)
         
-        //agar first integer chahiye
-        System.out.println(p3.getFirst().getFirst()); //sirg getFirst() karne se pehle pair aa jayega.
-       //Output: 10
+                //agar first integer chahiye
+                System.out.println(p3.getFirst().getFirst()); //sirg getFirst() karne se pehle pair aa jayega.
+                //Output: 10
         
-        //agar second element chahiye.
-        System.out.println(p3.getFirst().getSecond()); //Output: 12
+                //agar second element chahiye.
+                System.out.println(p3.getFirst().getSecond()); //Output: 12
 	}
 
 }
