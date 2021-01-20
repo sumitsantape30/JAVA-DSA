@@ -19,7 +19,7 @@ public class PairUse {
 		//Character,Character ka pair banana hai
 		Pair<Character, Character> p2= new Pair<>('a','b');
 		
-		// I want to create a pair jiske andar jo pehli chiz hai woh ek aur pair hai that is pair of Integer,Integer 
+		// I want to create a pair jiske andar jo pehli chiz hai woh and uske andar ek aur pair hai that is pair of Integer,Integer 
 		//agar muje teen chize sath rakhne hai, and isi pair class ko use krke rakhne hai -- mai pair class ka object banaunga jiski pehli chiz ek aur pair hai and dusri chiz Integer hai, so effectively uske andar 3 integers aagye, First ke andar ek pair hai jiske andar do Integers hai, Second ke andar ek Integer hai
 	    
 		int a= 10;
