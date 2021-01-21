@@ -99,7 +99,7 @@ public class LinkedListUse {
 		}
 		Node<Integer> temp = head;
 		int i = 0;
-		while (i < pos - i && temp.next != null) {
+		while (i < pos - 1 && temp.next != null) {
 			temp = temp.next;
 			i++;
 		}
