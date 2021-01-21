@@ -19,7 +19,7 @@ public class LinkedListUse {
 		while(data != -1){ 
 			Node<Integer> newNode = new Node<Integer>(data);//user sirf data dega but node hume banana hai, so har number input lene ke bad us number ke corresoponding Node banane ka kam humara, so new data input hone ke bad newNode us new input ko refer karega.
 			
-			//humne head 'first node' reference karne ke keliye banaya tha so first node input anae ke bad woh head ne new node ko point karna chahiye, head null hai matlab ek bhi input nhi aya hai
+			//humne head first node ka reference karne ke keliye banaya tha so first node input anae ke bad woh head ne new node ko point karna chahiye, head null hai matlab ek bhi input nhi aya hai
 			if(head == null){ //so ek input ane ke bad us first new Node input ko head bana dena chahiye
 				
 				//jo first input ayega, wahi head hai and wahi tail hai
