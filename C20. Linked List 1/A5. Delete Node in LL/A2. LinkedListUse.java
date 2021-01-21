@@ -99,7 +99,7 @@ public class LinkedListUse {
 		}
 		Node<Integer> temp = head;
 		int i = 0;
-		while (i < pos - 1 && temp.next != null) {
+		while (i < pos - 1 && temp.next != null) { ///jab bhi hum aisi chaining krte hai (next.next wali) to we should be sure kitemp.next null na ho
 			temp = temp.next;
 			i++;
 		}
