@@ -2,18 +2,6 @@ package LinkedList;
 
 public class LinkedListUse {
 
-	public static void print(Node<Integer> head) {
-		
-		while(head != null) {
-			System.out.print(head.data+" ");
-			head= head.next;
-		}
-		
-		System.out.println();
-		
-		
-	}
-	
 	public static void main(String[] args) {
 
 		Node<Integer> node1= new Node<Integer>(10); //iss statement se new krte hi memory mai ek node bana jiska data 10 hai and next null hai, jo node memory mai bana us node ka reference "node1" hai, and jis address pe woh node bana let's say @150 hai 
