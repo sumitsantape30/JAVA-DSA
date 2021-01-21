@@ -10,7 +10,7 @@ public class Node<T> {
 	
 	Node(T data){
 		this.data= data;
-		next= null; //jab mai memroy mai ek hi node banaunga khali to uska next null rahega.
+		next= null; //jab mai memroy mai ek hi node banaunga khali to uska next null rahega. Hum usko bad mai next wale node ke sath link krte hai
 	}
 
 }
