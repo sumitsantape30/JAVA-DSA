@@ -23,8 +23,8 @@ public class LinkedListUse {
 		node2.next = node3;
 
 		Node<Integer> head = node1;
-        print(head);
-        print(head); 
+                print(head);
+                print(head); 
 
 // main wala head and print function wala head dono alag alag hai
 // suppose main wale head mai pehle @150 tha, to print function karne bad bhi main wale head mai @150 hi rahega.
