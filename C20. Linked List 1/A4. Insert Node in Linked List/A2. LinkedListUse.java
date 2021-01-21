@@ -42,19 +42,20 @@ public class LinkedListUse {
 		//iss node ko insert karne keliye muje jis position pe insert karna hai uske ek pehle wale element tak pahuchna hai
 		int i=0;//sabse first node ka index zero hai, so i ko zero se start kr rhe hai
 		
+		//humko ek node insert karna hai isliye temp rakh rhe hai taki aage jake insert kr pau, agar temp nhi rakha to head ko age leke nhi ja skte na
 		Node<Integer>temp =head; //ek ek krke aage badhenge, head zeroth position ke corresponding hai to i zero pe hai to temp bhi head pe hai abhi, fir hum temp ko ek ek krke move karenge
 		
 		while(i< pos-1) { //jabtak temp pos-1 pe nhi pohochta tabtak age badhta rehna hai, means jabtak 'i' pos-1 index pe nhi pohochta
 			
 			temp= temp.next;// hume temp ko pos-1 position pe leke ana hai taki new node ke sath link kar paye
 			i++;
-		} //while loop ke bad mera temp jis pos pe insert karna hai uske thi ek pehle(pos-1) index pe agya
+		} //while loop ke bad mera temp jis pos pe insert karna hai uske thik ek pehle(pos-1) index pe agya
 		
 		//so, jis data ko insert karna tha uske corresponging jo node banaye the uske next mai temp ke next mai jo node hai usko dalna hoga
 		//link directly todne se pehle usko kisike sath likh krdo so that wo lost na hojaye
 		newNode.next= temp.next;
 		temp.next= newNode;
-        return head;
+                return head;
 		
         //agar pehlehi temp ke next mai new node dala to pehle jo element temp ke next mai tha uspe pahuch nhi payenge so  pahle jo element temp ke next mai hai usko newNode ke next mai dalo and then newNode ko temp ke next mai dalo(open book for clear)
 	
