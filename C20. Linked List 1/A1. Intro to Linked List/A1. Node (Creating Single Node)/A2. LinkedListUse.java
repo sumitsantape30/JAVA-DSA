@@ -1,18 +1,6 @@
 package LinkedList;
 
 public class LinkedListUse {
-
-	public static void print(Node<Integer> head) {
-		
-		while(head != null) {
-			System.out.print(head.data+" ");
-			head= head.next;
-		}
-		
-		System.out.println();
-		
-		
-	}
 	
 	public static void main(String[] args) {
 
