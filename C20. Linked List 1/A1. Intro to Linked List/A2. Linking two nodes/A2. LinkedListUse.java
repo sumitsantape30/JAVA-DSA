@@ -15,7 +15,7 @@ public class LinkedListUse {
 		//agar node1 ke next mai null ki jagah node2 ka address/reference aa jaye to link ban jayegi ki 10 ke bad 20 pe jana hai
 		node1.next= node2; //node1 ki next mai 2nd wale node ka reference dalna chahiye for linking, so second node ka reference "node2" ke pas hai
 		
-		System.out.println(node2); //yeh and iske niche wala same address print karenge coz node2 refrence hai node ka and node1 ka next node2 ko refer kr rha hai
+		System.out.println(node2); //yeh and iske niche wala same address print karenge coz node2 reference hai node ka and node1 ka next node2 ko refer kr rha hai
 		System.out.println(node1.next); 
 		
 		}
