@@ -35,6 +35,8 @@ public class Practices {
 		return length;
 	}
 
+	//Do pointers lenge, dono starting mai first node pe honge, slow ko mai ek step se aage move karunga and fast ko two steps se aage karunga(initially slow and fast dono head se start hue) 
+	// Slow jis speed se move karra fast uske double speed se move karra, jab fast end pe pahuch chuka hoga to humara slow mid pe hoga, slow jispe hoga wahi midpoint hoga.
 	public static Node<Integer> midPoint(Node<Integer> head, int length) {
 
 		if (head == null || head.next == null) {
