@@ -84,8 +84,8 @@ public class LinkedListUse {
 		}
 		
 		
-		Node<Integer> temp1= head1, temp2= head2;
-		Node<Integer> head3= null, tail3= null;
+		Node<Integer> temp1= head1, temp2= head2; // dono list ke heads temp mai lenge taaki aage compare karne keliye traverse kr paye
+		Node<Integer> head3= null, tail3= null; //final list ke head and tail intially null rahega
 		
 		
 		if( temp1.data < temp2.data) {
@@ -98,7 +98,7 @@ public class LinkedListUse {
 			temp2= temp2.next;
 		} //iss loop ke bad meri final list mai first entry aagyi jisko humne head liya and ek hi element hai to usiko tail liya
 		
-		while( temp1 != null && temp2 != null) { //tabtak travel karenge jabtak dono mese ek list null nh ho jati
+		while( temp1 != null && temp2 != null) { //tabtak travel karenge jabtak dono mese ek list null nhi ho jati, means tabtak travel karenge jabtak dono list bhi not null hai
 			
 			if(temp1.data <= temp2.data){
 				tail3.next= temp1;
