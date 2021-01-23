@@ -5,21 +5,21 @@ public class StackUsingArray {
 	private int data[]; //humne stack array mai rakhne ka decide kiya so obviosuly ek array legega
 	private int top;// this is the index of the topmost element of the stack to track ki agar push(10) kiya to konse index pe 10 ko add karna chahiye, top() call kiya to konsa element output dena chahiye yeh track karne keliye top rakhre
 	
-	public StackUsingArray() { //StackUsingArray ka constructor, jab StackUsingArray ka object banahega to apne aap 10 size ka array ban jayega
+	public StackUsingArray() { //StackUsingArray ka constructor, jab StackUsingArray ka object banega to apne aap 10 size ka array ban jayega
 		data= new int[10];
 		top= -1; //jaisehi object banaega to stack initially khali rahega so top ko -1 pe rakh rha hai means stack pura khali hai
 	}
-	 
+	
 	public StackUsingArray(int capacity) { //user se puchte hai usko kitni capacity ka array banana hai, upr wale mai by default 10 size ka ban jata tha
 		data= new int[capacity];
 		top= -1;
 	}
 	
 	
-	// static kyu nhi liya? =new stack bana rhe means StackUsingArray class ka ek object bana rhe so do we want ki har stack/object keliye isEmpty() common ho? nhi na hear object/stack ka isEmpty function khudka hona chahiye, so yeh shared property nhi hai sare stacks/objects ki so static nhi lenge
+	// static kyu nhi liya? =new stack bana rhe means StackUsingArray class ka ek object bana rhe so do we want ki har stack/object keliye isEmpty() common ho? nhi na har object/stack ka isEmpty function khudka hona chahiye, so yeh shared property nhi hai sare stacks/objects ki so static nhi lenge
 	public  boolean isEmpty() { // har stack/object ka apna function hona chahiye jo btayega woh stack empty hai ya nhi so woh shared property nhi saare stacks ki so it wont be static
 		
-		 //agar top -1 pe hai means mera stack khali hai, coz koi element add hota top bhi update hota
+		 //agar top -1 pe hai means mera stack khali hai, coz koi element add hota to top bhi update hota
 		//return (top == -1);
 		
 		if(top == -1) {
