@@ -6,13 +6,13 @@ public class Insert_Recursive {
 	public static Node<Integer> insert(Node<Integer> head, int pos, int element ){
 		
 		if(pos==0) { //agar pos 0 pe insert karna haito
-			// agar zero positon pe insert karna hai to uss element ke corresponding newNode banake kske next mai baki list link kardenge
+			// agar zero positon pe insert karna hai to uss element ke corresponding newNode banake uske next mai baki list link kardenge
 			Node<Integer> newNode= new Node<Integer>(element);
 			newNode.next= head; 	
 			return newNode;
 		}
 		
-		if(head== null) { // agar head null goya but pos fir bhi koi number h to 
+		if(head== null) { // agar head null hua but pos fir bhi koi number h to 
 			return head;
 		}
 		
