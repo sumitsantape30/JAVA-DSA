@@ -1,7 +1,7 @@
 package Collection_LinkedList;
 
 //the already implementation of linkedlist is in the form of linkedlist class
-//linkedList nam se class hai already java collections framework mai, aur agar muje linkedlist banani hai to muje uss class ka ek object create karna hoga
+//linkedList nam se class hai already java collections framework mai, aur agar muje linkedlist banani hai uss linkedlist from collection framework ka use krke to muje uss class ka ek object create karna hoga
 import java.util.LinkedList; 
 
 public class CollectionsLinkedList {
@@ -11,9 +11,9 @@ public class CollectionsLinkedList {
 		//agar muje linkedlist mai integers store karne hai to <Integer>
 		//and this implementation of linkedlist is doubly linkedlist (connection to next and previous both is there)
 		// yeh linkedlist class ka object hai so isme node ko uske next mai link karna is not important
-		LinkedList<Integer> list = new LinkedList<>();// jo linkedlist class already hai uska class banaya hai humne
+		LinkedList<Integer> list = new LinkedList<>();// jo linkedlist class already hai uska object banaya hai humne
 		
-		// jo bhi element .add function se add kr rhe hai woh list ke end mai add hote ayenge.
+		// jo bhi element .add function se add kr rhe hai woh list ke end mai add hote jayenge.
 		list.add(10);//  list mai elements add karne keliye (add function matlab woh node create kr rha hai)
 		list.add(30);
 		
