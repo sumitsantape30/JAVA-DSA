@@ -48,9 +48,9 @@ public class Reverse_Recursively_on {
 	}
 
 	public static void main(String[] args) {
-      Node<Integer> head= TakeInput();
-      head =  reverseLLR(head);
-      print(head);
+        Node<Integer> head= TakeInput();
+        head =  reverseLLR(head);
+        print(head);
 	}
-
+	
 }
