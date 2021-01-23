@@ -3,7 +3,7 @@ package QueueUsingArray;
 public class QueueUsingArray {
 	
 	//inko private rakhenge taki object banane ke bad isko koi change na krde
-	private int data[]; //Queue Using array ka rhe hai to obviously ek chahiye
+	private int data[]; //Queue Using array kar rhe hai to obviously ek array chahiye
    //hum deletion and insertion queue mai front and rear end se karre honge so woh bhi chahiye 
 	private int front; // front end se elements remove honge, so front element will be stored at this index
 	private int rear; //rear end se elements add honge, so rear element will be stored at this index
