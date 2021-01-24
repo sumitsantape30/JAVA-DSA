@@ -82,8 +82,8 @@ package QueueUsingLL;
 public class QueueUsingLL<T> {
 
 	//front and rear, do ends hai queue ke, rear pe insertions karenge and front pe deletions so muje front and rear chahiye 
-	//front and rear N0de<T> ke references honge, wahi type ke rahenge both
-	// bothe of these properties should be private, nobody should have access to this properties other than this class, taki front and rear ke values ko koi change na kr paye
+	//front and rear Node<T> ke references honge, wahi type ke rahenge both
+	// both of these properties should be private, nobody should have access to this properties other than this class, taki front and rear ke values ko koi change na kr paye
  	private Node<T> front;
 	private Node<T> rear;
 	// agar size variable nhi rakha to jab bhi Queue ka size chahiye hoga to har bar linkedlist ka length nikal rhe honge, and linkedlist ka length nikalna is O(n) isliye size variable rakhenge, jab bhi queue mai enqueue karenge to size  ko ++ karenge aur dequeue krne ke waqt size -- karenge.
@@ -135,7 +135,7 @@ public class QueueUsingLL<T> {
 	
 	//dequeue front se hoga
 	T dequeue() throws QueueEmptyException { //jo element remove karre woh bhi return karenge, uska type T rahega
-	
+		
 		if( size()==0) {
 			throw new QueueEmptyException();
 		}
