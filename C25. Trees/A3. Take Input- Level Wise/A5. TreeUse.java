@@ -1,5 +1,6 @@
 package TakeInputLevelWise;
 
+//agar collection framework wala queue use kr rhe ho to linkedlist and queue import karna padega
 import java.util.LinkedList;
 import java.util.Queue;
 import java.util.Scanner;
