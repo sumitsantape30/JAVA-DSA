@@ -33,7 +33,7 @@ public class BinaryTreeInput {
 		}
 		
 		//ab ek string banayenge aur data String mai dalenge
-		String toBePrinted=  root.data+ ""; //isko string mai convert karnekeliye msine empty String append kardi
+		String toBePrinted=  root.data+ ""; //isko string mai convert karnekeliye maine empty String append kardi
 		
 		//agar left hai to mai print wali jo string hai usme append karenge "" + root ke left ka data
 		if( root.left != null) { //agar root ka left null nhi hai
@@ -48,7 +48,7 @@ public class BinaryTreeInput {
 		//ab mai isko print kar dunga
 		System.out.println(toBePrinted); //iss line mai humne first root ke bare(1: L2, R3) mai print kiya ab iske bad muje recursively aage print karna hai
 		
-		//ab hum left and right pe recusrion karenge and unko unka kam karne bolenge, hume tension nhi leni hai coz recursion humara dhyan rakhega, humne basecase ka dhyan rakha hai, ek step humne dhyan se karliya hai ab jo smaller proble hai woh recursion apne aap dekh lega
+		//ab hum left and right pe recusrion karenge and unko unka kam karne bolenge, hume tension nhi leni hai coz recursion humara dhyan rakhega, humne basecase ka dhyan rakha hai, ek step humne dhyan se karliya hai ab jo smaller problem hai woh recursion apne aap dekh lega
 		printTree(root.left);
 		printTree(root.right);	
 	}
