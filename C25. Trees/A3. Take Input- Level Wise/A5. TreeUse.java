@@ -63,26 +63,31 @@ public class TreeUse {
 	}
 	
 	public static void printLevelWise(TreeNode<Integer> root){
-		  Queue<TreeNode<Integer>> queue = new LinkedList<>();
+		
+		//levelwise print karna hai isliye queue lere
+		  Queue<TreeNode<Integer>> queue = new LinkedList<>(); 
 		  
+		// pehle queue mai root insert karenge and then null insert karenge, null indicates ki humne ek level queue mai dal di hai
 		   queue.add(root);
 		   queue.add(null);
 			
+		//jabtak queue puri khali nhi hoti tabtak traverse krte rahenge
 		   while ( !queue.isEmpty() ) {
 			    
-			   TreeNode<Integer> frontNode = queue.poll();
+			   //sabse pehle queue mese first node nikalenge usko frontNode mai store karre
+			   TreeNode<Integer> frontNode = queue.poll(); // frontNode = 1, null, 2, 3, 4, null, 5, 6, null
 			   
-			   if ( frontNode == null ) {
+			   if ( frontNode == null ) { //check karenge kya mera frontNode null hai? agar null hai means humne ek level print kardi hai ab muje next line mai means next level pe jana chahiye
 				   
 				   System.out.println();
 				   
-				   if ( !queue.isEmpty() ) {
+				   if ( !queue.isEmpty() ) { //ek level hone ke bad hum next level mai aagye agar yeh node khali nhi hai to iss level mai null dalenge yeh null iss level ke sabse last mai add hoga
 					   
 					   queue.add(null);
 				   }
 			   } 
 			   
-			   else {
+			   else {  // agar frontNode null nhi hai to front node ka data print karenge aur queue mai next child add karenge 
 				   
 				   System.out.print(frontNode.data + " ");
 				   
@@ -92,7 +97,7 @@ public class TreeUse {
 				   }
 			   }
 		   }
-		}
+	}
 	
 //	public static void print(TreeNode<Integer> root) {
 //		String s = root.data + ":";
