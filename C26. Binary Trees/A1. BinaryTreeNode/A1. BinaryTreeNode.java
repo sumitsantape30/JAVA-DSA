@@ -9,5 +9,5 @@ public class BinaryTreeNode<T> { //humare ek node mai data rahega and do childre
 	
 	public BinaryTreeNode(T data) {
 		this.data= data;
-	}
+	} //left and right to waisebhi by default null hi rahenge
 }
