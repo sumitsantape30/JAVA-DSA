@@ -26,6 +26,7 @@ public class BinaryTreeInput {
 		return root;
 	}
 	
+	//sabse pehle root ke data ko leke string banaungna then check karunga ki uss root ke left right mai mai koi node hai ya nhi means null hai ki nhi check karunga angar null nhi hai to unke data  konbhi string mai append karunga and then string print karunga and then left aur right child pe printTree call karunga.
 	public static void printTree( BinaryTreeNode<Integer> root) {
 		
 		if( root == null) { //this is my basecase, coz hum yaha left pe bhi call karre and right pe bhi
