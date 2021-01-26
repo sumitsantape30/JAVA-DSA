@@ -68,10 +68,8 @@ public class TakeInputLevelWise {
 		   while ( !queue.isEmpty() ) {
 			    
 			   BinaryTreeNode<Integer> frontNode = queue.dequeue();
-			   
-			   
 				   
-				   System.out.print(frontNode.data +":");
+		           System.out.print(frontNode.data +":");
 			   
 			   if ( frontNode.left != null) {
 
