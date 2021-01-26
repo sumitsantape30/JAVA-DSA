@@ -18,7 +18,7 @@ public class ConstructTree {
 			return null;
 		}
 		
-		//rotData mere preorder ke starting mai hoga usko rootData mai store karenge and then uska root banayenge
+		//rootData mere preorder ke starting mai hoga usko rootData mai store karenge and then uska root banayenge
 		int rootData= pre[preS] ; //mera root preorder ke starting mai hoga. index mai 0 mat dena, hume ek rnage mai karna hai so start dena
 		BinaryTreeNode<Integer> root= new BinaryTreeNode<>(rootData); //in the end we'll be returning root
 		
