@@ -19,8 +19,8 @@ public class ConstructTree {
 		}
 		
 		//rootData mere preorder ke starting mai hoga usko rootData mai store karenge and then uska root banayenge
-		int rootData= pre[preS] ; //mera root preorder ke starting mai hoga. index mai 0 mat dena, hume ek rnage mai karna hai so start dena
-		BinaryTreeNode<Integer> root= new BinaryTreeNode<>(rootData); //in the end we'll be returning root
+		int rootData= pre[preS] ; //mera root preorder ke starting mai hoga. index mai 0 mat dena, hume ek range mai karna hai so start index dena
+		BinaryTreeNode<Integer> root= new BinaryTreeNode<>(rootData); //in the end we'll be returning root, yeh humare final wale tree ka root hai
 		
 		//hume preorder ke start mai root milgya hai ab usi root ko inorder mai dhundte hai kaha rakha hua hai hai root ka index
 		int rootInIndex= -1; //abhi pta nhi hai to -1 rakh lete hai
@@ -39,10 +39,10 @@ public class ConstructTree {
 			return null;
 		}
 		
-		//muje left ke inorder ka start chahiye
-		//muje left ke inorder ka end chahiye
-		// muje left ke preorder ka start chahiye
-		// muje left ke preorder ka end chahiye and yahi variables muje right keliye bhi chahiye.
+		//muje inorder ke left ka start chahiye
+		//muje inorder ke left ka end chahiye
+		// muje preorder ke left ka start chahiye
+		// muje preorder ke left ka end chahiye and yahi variables muje right keliye bhi chahiye.
 		
 		//muje overall inorder ka start and end pta hai aur maine root ka index dhund liya hai
 		int leftInS = inS ; //left ka inorder start will be jo overall inorder ka start tha wahi
