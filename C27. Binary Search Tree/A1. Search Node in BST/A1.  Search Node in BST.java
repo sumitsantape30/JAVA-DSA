@@ -44,7 +44,7 @@ public class SearchNodeInBST {
 			return null;
 		}
 
-		// agar root ka data search query ke barabe hai to return root,
+		// agar root ka data search query ke barabr hai to return root,
 		if (k == root.data) {
 			return root;
 		}
