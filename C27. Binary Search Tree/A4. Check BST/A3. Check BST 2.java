@@ -41,6 +41,7 @@ public class BST2 {
 		int min = Math.min(root.data, Math.min(leftOutput.second.first, rightOutput.second.second));
 		
 		//overall maximum
+		
 		int max = Math.max(root.data, Math.max(leftOutput.second.first, rightOutput.second.second));
 
 		//Overall isBSt
