@@ -107,12 +107,12 @@ public class IsBST3 {
 
 	public static void main(String[] args) {
 
-    Scanner s= new Scanner(System.in);
-    int min= s.nextInt();
-    int max= s.nextInt();
-		BinaryTreeNode<Integer> root = takeInput();
-		printLevelWise(root);
-		System.out.println(isBST3(root, min, max));
+        Scanner s= new Scanner(System.in);
+        int min= s.nextInt();
+        int max= s.nextInt();
+        BinaryTreeNode<Integer> root = takeInput();
+	printLevelWise(root);
+	System.out.println(isBST3(root, min, max));
         
 	}
 
