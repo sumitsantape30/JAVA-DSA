@@ -17,3 +17,56 @@ Sample Output 1:
 
 Code:
 
+package BinarySearchTree;
+
+class Pair1<T1 , T2>{
+	T1 head;
+	T2 tail;
+	
+	public Pair1(T1 head, T2 tail) {
+		head= head;
+		tail= tail;
+	}
+}
+
+public class BSTToSortedLL {
+	
+	public static Pair1<LinkedListNode<Integer>, LinkedListNode<Integer>>  BSTToSortedLL2(BinaryTreeNode<Integer>root){
+		
+		if(root == null) {
+			Pair1<LinkedListNode<Integer>, LinkedListNode<Integer>> ans= new Pair1<LinkedListNode<Integer>, LinkedListNode<Integer>>(null,null);		
+			return ans;
+		}
+		
+		Pair1<LinkedListNode<Integer>, LinkedListNode<Integer>> rhs= BSTToSortedLL2(root.right);
+		Pair1<LinkedListNode<Integer>, LinkedListNode<Integer>> lhs= BSTToSortedLL2(root.left);
+		
+		LinkedListNode<Integer> rootNode = new LinkedListNode<Integer>(root.data);
+		
+		if(lhs.tail !=null) {
+			lhs.tail.next= rootNode;
+		}else {
+			
+			lhs.head= rootNode;	
+		}
+		
+		if(rhs.head != null) {
+		 rootNode.next= rhs.head;
+		}
+		
+		Pair1<LinkedListNode<Integer>, LinkedListNode<Integer>> ans= new Pair1 <LinkedListNode<Integer>, LinkedListNode<Integer>>(lhs.head, rhs.tail);
+		return ans;
+	}
+	
+	public static LinkedListNode<Integer> BSTToSortedLL( BinaryTreeNode<Integer> root){
+		
+		return BSTToSortedLL2(root).head;
+	}
+	
+	
+	public static void main(String[] args) {
+    
+	}
+
+}
+
