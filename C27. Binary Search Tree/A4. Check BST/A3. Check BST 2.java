@@ -33,8 +33,8 @@ public class BST2 {
 		
 		//basecase done ab left aur right se yahi chize mangwate hai
 
-		Pair<Boolean, Pair<Integer, Integer>> leftOutput = isBST2(root.left); //yeh muje left ka min and max and bst hai ya nhi yeh lake dega
-		Pair<Boolean, Pair<Integer, Integer>> rightOutput = isBST2(root.right); //yeh muje right ka min and max and bst hai ya nhi yeh lake dega
+		Pair<Boolean, Pair<Integer, Integer>> leftOutput = isBST2(root.left); //hum left ko bol rhe ki tu muje left ka min and max and bst hai ya nhi lake de
+		Pair<Boolean, Pair<Integer, Integer>> rightOutput = isBST2(root.right); // hum right ko bol rhe ki tu muje right ka min and max and bst hai ya nhi yeh lake de
 
 		//overall min and max nikal rhe
 		//overall minimum 
