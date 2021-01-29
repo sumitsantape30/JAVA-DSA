@@ -51,7 +51,7 @@ public class MapsUse {
         }
         
         
-        //To iterate over the map for keys, muje mere map ek ek karke har ek chiz pe jana hai
+        //To iterate over the map for keys, muje mere map pe ek ek karke har ek chiz pe jana hai
       // you can access all the keys using keySet() but it returns all the keys in a data type called set
         Set<String> keys= map.keySet(); //humare pas saari keys aagyi keys variable mai jiska datatype Set hai
        //now we have all the keys, and now if you want to iterate over these keys we'll use faster iteration
