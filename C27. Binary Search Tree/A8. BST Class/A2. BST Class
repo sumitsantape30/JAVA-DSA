@@ -120,7 +120,7 @@ public class BinarySearchTreeClass {
 		}
         
 		//agar root null nhi hai to I need to figure out ki left mai insert karu ya right mai insert karu
-		if (root.data > data) { // agar mera root ka data bada hai data se to mai left side mai insert karunga. agar left ka root null hua to left ka root change hojayega, mai root mai jo bhi ayega recusrio ke bad usko lagaunga
+		if (root.data > data) { // agar mera root ka data bada hai data se to mai left side mai insert karunga. agar left ka root null hua to left ka root change hojayega, mai root mai jo bhi ayega recursion ke bad usko lagaunga
 			root.left = insertData(root.left, data);
 
 		} else { // agar root ka data less than or equal hai data(jise insert) karna hai usase to right mai call karenge.
