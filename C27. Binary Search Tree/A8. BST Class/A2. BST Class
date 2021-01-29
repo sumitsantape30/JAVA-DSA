@@ -72,8 +72,8 @@ public class BinarySearchTreeClass {
 			   
 				//humara jo minNode ka data tha usko root bana diya. aur right side mai wahi node tha so usko delete karna padega kyuki usko root bana diye so right side pe delete call karenge
 				root.right = deleteData(root.right, minNode.data); //agar 3 node ka tree hai aur hume root delete karna hai, jo right side ek hi element hai wahi mimimum hoga so woh root banega. Ab right wale ko delete karne ke bad null return karega so woh null root ke right mai attach karna padega
-				return root;
 			}
+		        	return root;
 		}
 	}
 
