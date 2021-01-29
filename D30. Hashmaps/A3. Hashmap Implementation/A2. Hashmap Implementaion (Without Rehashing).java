@@ -5,7 +5,7 @@ import java.util.ArrayList;
 //Our map class is going to be generic on two thing key and value, so that user can store any kind of key and value he want to store
 //Bucket Array mai store karne keliye : mai linkedlist ki ek node banaunga mai, yeh node key and value store kr rhi hogi (Node<k,v>) so isko generic rakhna padega hume and mera array bhi isi type ka hoga but java mai generic type ka array nhi bana skte. So hum arraylist use karenge and arraylist mai dal skte hai yeh nodes ko jo generic nodes hai
 //Iss arraylist ko array ki tarah hi treat karenge, shuru mai humne decide kiya tha ki array ka size 20 hoga so arraylist mai hum shuru sehi 20 entries(buckets) rakh lenge so that array jaise behave kare, means koi particular index pe value dalni ho to dal ske. and Har ek ko null kar denge
-//Basically ek Arraylist hai uss arraylist ke har bucket mai linkedlist hai jiske andar key, value and next node ka address hai
+//Basically ek Arraylist hai uss arraylist ke har bucket mai linkedlist hai jiske har node ke andar key, value and next node ka address hai
 public class Map <K, V> {
 
 	//Hum ek arraylist mai key values store kre honge, so hume ek Arraylist chahiye jiske har bucket mai  head ka address hoga so MapNode(linked list ka head)) hogi k,v type ki
