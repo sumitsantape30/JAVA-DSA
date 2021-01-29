@@ -7,14 +7,14 @@ public class MapsUse {
 	public static void main(String[] args) {
 
 		//HashMap is generic on two things, key kaisi hogi and value kaisi hogi yeh hume dono chize btani hongi
-		HashMap< String, Integer > map= new HashMap<>();//maine apna Map bana liya ab mai usme chize insert kr skta hu, access kr skta hu delete kr skta hu
+	         HashMap< String, Integer > map= new HashMap<>();//maine apna Map bana liya ab mai usme chize insert kr skta hu, access kr skta hu delete kr skta hu
 		
 		//Maps mai sara kam key pe karna hota hai value pe nhi krna hota.
 		
 		//insert data into the map
         map.put("abc", 1); //kis key ke corresponding kya value dalni hai hum yeh put kr skte hai so maine "abc" ke corresponding 1 value dal di
         map.put("def", 2); //humne "def" ke corresponding 2 dal diya
-        //So in this way we can insert data into our hashmap and it's taking O(n)
+        //So in this way we can insert data into our hashmap and it's taking O(1)
         
         
         // size (number of keys in the map, agar same key ke corresponding other value hai tabhi woh key ek hi bar count hogi, actually we update data inside map when we're putting diffrent value to the same key)
