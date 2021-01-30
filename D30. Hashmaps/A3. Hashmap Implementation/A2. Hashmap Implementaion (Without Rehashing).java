@@ -26,9 +26,9 @@ public class Map <K, V> {
 		//and size by default zero hi hogi coz object banne ke bad humare linkedlist mai zero entries rahegi
 	}
 	
-	// konse bucket mai dalna hai (We can aslo call it HashFucntion coz that's what it does)
+	// konse bucket mai dalna hai (We can also call it HashFucntion coz that's what it does)
 	private int getBucketIndex(K key) { //iss function ko input mai key milegi coz uss key ko konse index pe dalna hai yeh nikalna hai
-		//ab step hai pehle iss key ko use krke hascode nikalnege then usko compression function ke throught leke Copmress karke return kard denge
+		//ab step hai pehle iss key ko use krke hascode nikalnege then usko compression function ke throught leke Compress karke return kardenge
 		
 		int hashCode= key.hashCode(); //Har generic object class ka kahi na kahi subclass hoti hai (Every Object in java is basically inherited from the object class somehow, and object class ke andar HashCode implemented hai isliye generic bhi hai to problem nhi)
 		return hashCode % numBuckets; // Compression function	
