@@ -118,7 +118,7 @@ public class Map <K, V> {
 	//inbuilt mai put hota hai
 	public void insert(K key, V value) { //user se ek key ayegi and value ayegi to insert inside map
 		//sabse pehle iss key ke corresponding nikalna padega ki yeh konse bucket mai jayega means hume arraylist ka index chahiye jiske andar iss key ko add karenge. So will make a private function to get the bucket index
-		//then linkedlist ka head nikalte hai uss linked list andar traverse karke dekhte hai ki kahipar same key rakhi hui hai kya, if we have the same key somewhere to hum sirf value update kardenge warna hum ek new entry create kar denge.
+		//then linkedlist ka head nikalte hai and uss linked list ke andar traverse karke dekhte hai ki kahipar same key rakhi hui hai kya, if we have the same key somewhere to hum sirf value update kardenge warna hum ek new entry create kar denge.
 		int bucketIndex= getBucketIndex(key); // konsi bucket mai bhejna hai
 		
 		MapNode<K, V> head= buckets.get(bucketIndex); // yeh bucket index jis bucket ka hai uski linked list ka head get karre
@@ -137,8 +137,8 @@ public class Map <K, V> {
 		head= buckets.get(bucketIndex); // jis index pe hume insert karna hai waha pe jo linkedlist hai uska head, original wala head.
 		MapNode<K, V> newElementNode = new MapNode<K, V>(key, value);// New node banaya of key jo hume insert karna hai and iss node ke next hum head dal denge 
 		size++;
-		newElementNode.next= head; //ye
-		buckets.set(bucketIndex, newElementNode);
+		newElementNode.next= head; //new mapnode ke next mai head ko attach kar denge
+		buckets.set(bucketIndex, newElementNode); // apni arraylist
 		
 		//Rehashing
 		double loadFactor= (1.0*size)/numBuckets; // (number of elements/ numbr of buckets)
