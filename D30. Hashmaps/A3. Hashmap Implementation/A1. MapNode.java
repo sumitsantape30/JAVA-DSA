@@ -1,6 +1,6 @@
 
 // yeh node bhi generic hoga and yeh apne pas ek key store kr rha hoga and value store kr rha hoga
-// Arraylist mai ek bucket mai hum jo arraylist rakhenge uske ek Node ko MapNode bolte hai, us MapNode mai key, value and obviously next node kabhi Address rahega hi
+// Arraylist mai har bucket mai hum jo linkedlist rakhenge uske ek Node ko MapNode bolte hai, us MapNode mai key, value and obviously next node kabhi Address rahega hi
 public class MapNode<K, V> { 
 	
 	K key;
