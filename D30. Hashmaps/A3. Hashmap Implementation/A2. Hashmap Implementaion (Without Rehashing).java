@@ -145,8 +145,5 @@ public class Map <K, V> {
 		if( loadFactor > 0.7) {
 			rehash();
 		}
-		
-		
 	}
-
 }
