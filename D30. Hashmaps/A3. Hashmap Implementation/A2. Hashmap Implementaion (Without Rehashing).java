@@ -12,7 +12,7 @@ public class Map <K, V> {
 	ArrayList <MapNode<K, V>> buckets;// arraylist ka nam buckets hai
 	//size function rahega isliye size kobhi maintain krte hai, taki size nikalne ke time puri linkedlist traverse karke size na nikalna pde
 	int size; // It is not the number of the buckets, it is number of entries that you put into map
-	int numBuckets; //Total number of buckets in my Arraylist
+	int numBuckets; //Total number of buckets in my Arraylist. Matlab it is length of my arraylist ki arraylist mai mai itni entries dal skta hu
 	
 	public Map() { //Constructor
 		numBuckets= 20; //Number of buckets
