@@ -121,7 +121,7 @@ public class Map <K, V> {
 				K key= head.key;
 				V value= head.value;
 				insert(key, value); //yeh naye wale mai insert karega coz woh buckets mai add krta hai and now buckets is pointing towards the new Arraylist
-				//new arraylist mai insert karne ke ad next node pe jayenge
+				//new arraylist mai insert karne ke bad next node pe jayenge
 				head= head.next;
 			}
 		}
