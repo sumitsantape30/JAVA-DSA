@@ -108,7 +108,7 @@ public class Map <K, V> {
 		size=0;
 		numBuckets *= 2; // number of buckets 2 times hogyi h new wale arraylist mai to woh bhi update kar denge
 		
-		//jaisehi maine yeh teeno kam kardiye (new buckets mai sare null kardiya, size ko zero kardiya and number of buckets ko double kardiya) iske bad humara jo map hai that has become an empty map, so meri jo purani entries thi I'll traverse through these entries, i'll go to each bucket within each bucket i'll go to each node of my linked list and I'm going to inser that key value into the new buckets arraylist
+		//jaisehi maine yeh teeno kam kardiye (new buckets mai sare null kardiya, size ko zero kardiya and number of buckets ko double kardiya) iske bad humara jo map hai that has become an empty map, so meri jo purani entries thi I'll traverse through these entries, i'll go to each bucket within each bucket i'll go to each node of my linked list and I'm going to insert that key value into the new buckets arraylist
 		//old buckets ke har bucket pe traverse krke uske node pe jake usko new wale mai dalenge
 		//ek ek karke jo mera temp hai which is previous bucket array 
 		for(int i= 0; i< temp.size();i++) {
