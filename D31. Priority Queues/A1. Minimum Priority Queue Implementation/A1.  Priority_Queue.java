@@ -75,11 +75,11 @@ public class Priority_Queue {
 		//yeh kam hone ke bad humara major kam that is heapify baki hai, and hum downward heapify karenge as last element pehle index pe arr rha h
 		//heapify karne keliye root ke left and right dono children ke sath compare karna padega, and dono child mese jo bhi minimum hoga usko root wala replace karega.
 		int index = 0; // root ka index. Index is the node jisko hum compare kar rhe hai
-		int minIndex = index; // dono children mese jo minimum hoga uska sath hume replace karna hai isliye jo minimum hoga uska index hai minIndex, And jo root ka index hai wahi 
-		int leftChildIndex = 1; // left= 2*i+1 (i=0) 
+		int minIndex = index; // dono children mese jo minimum hoga uska sath hume replace karna hai isliye jo minimum hoga uska index hai minIndex, And initially jo root ka index hai wahi minIndex rahega
+		int leftChildIndex = 1; // left= 2*i+1 (i=0) //root ke dono childrens ke index nikalenge taki unko root ke sath compare kar paye.
 		int rightChildIndex = 2; // right= 2*i+2 (
 
-		while (leftChildIndex < heap.size()) { // yeh kam hume bar bar karna hai jabtak range mai hai means jabtak leaf node nhi aajata (leaf node ho jane ke bad, uske children nhi rahenge compare karne keliye) (heap mai hum sabse pehle left side mai element insert karte hai isliye leftChildIndex < heap.size() kiya hai, agar left child nhi hoga to right hogahi nhi coz insertion left se hota hai
+		while (leftChildIndex < heap.size()) { // yeh kam hume bar bar karna hai jabtak range mai hai means jabtak leaf node nhi aajata (leaf node ho jane ke bad, uske children nhi rahenge compare karne keliye) (heap mai hum sabse pehle left side mai element insert karte hai isliye leftChildIndex < heap.size() kiya hai, agar left child nhi hoga to right hogahi nhi coz insertion left se hota hai)
 
 			// right and left ki donoki values compare karenge and minIndex pe rakhe hue element se chote honge to minIndex ko update karenge
 			if (heap.get(leftChildIndex) < heap.get(minIndex)) { 
