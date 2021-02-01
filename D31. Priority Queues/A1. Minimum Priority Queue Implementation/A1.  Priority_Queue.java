@@ -79,7 +79,7 @@ public class Priority_Queue {
 		int leftChildIndex = 1; // left= 2*i+1 (i=0) //root ke dono childrens ke index nikalenge taki unko root ke sath compare kar paye.
 		int rightChildIndex = 2; // right= 2*i+2 (
 
-		while (leftChildIndex < heap.size()) { // yeh kam hume bar bar karna hai jabtak range mai hai means jabtak leaf node nhi aajata (leaf node ho jane ke bad, uske children nhi rahenge compare karne keliye) (heap mai hum sabse pehle left side mai element insert karte hai isliye leftChildIndex < heap.size() kiya hai, agar left child nhi hoga to right hogahi nhi coz insertion left se hota hai)
+		while (leftChildIndex < heap.size()) { // yeh kam hume bar bar karna hai jabtak range mai hai means jabtak leaf node nhi aajata (leaf node ho jane ke bad, uske children nhi rahenge compare karne keliye, in other words sabse last left wala child heap.size()-1 iss index pe rahega) (heap mai hum sabse pehle left side mai element insert karte hai isliye leftChildIndex < heap.size() kiya hai, agar left child nhi hoga to right hogahi nhi coz insertion left se hota hai)
 
 			// right and left ki donoki values compare karenge and minIndex pe rakhe hue element se chote honge to minIndex ko update karenge
 			if (heap.get(leftChildIndex) < heap.get(minIndex)) { 
