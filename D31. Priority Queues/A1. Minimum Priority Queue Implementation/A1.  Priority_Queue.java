@@ -49,7 +49,7 @@ public class Priority_Queue {
 				heap.set(childIndex, heap.get(parentIndex)); // arraylist(heap) mai set karna hai muje, childindex pe parent ki value set krdi
 				heap.set(parentIndex, temp); // parentIndex pe temp(child) ko set karenge
                
-				//yeh swap karne ke bad jo childIndex pe element rakha tha woh parentIndex pe chala gya hai ab usko uske parent ke sath compare karna adega
+				//yeh swap karne ke bad jo childIndex pe element rakha tha woh parentIndex pe chala gya hai ab usko uske parent ke sath compare karna padega
 				childIndex = parentIndex; // woh root tak check karna hai so jo parent hai woh child banega
 				parentIndex = (childIndex - 1) / 2; // humne humara childIndex update kiya so parentIndex ko firse calculate karna padega
 
