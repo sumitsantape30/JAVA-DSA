@@ -73,7 +73,7 @@ public class Priority_Queue {
 		heap.remove(heap.size() - 1); // Jo last pe index element pada hai usko hum delete karenge coz hum usko 0th index pe leke aagye hai
       
 		//yeh kam hone ke bad humara major kam that is heapify baki hai, and hum downward heapify karenge as last element pehle index pe arr rha h
-		//heapify karne keliye root ke left and right dono children ke sath compare karna padega, and dono child mese jo bhi minimum hoga usko root wala replace karega.
+		//heapify karne keliye root ke left and right dono children ko sath mai compare karna padega, and dono child mese jo bhi minimum hoga usko root wala replace karega.
 		int index = 0; // root ka index. Index is the node jisko hum compare kar rhe hai
 		int minIndex = index; // dono children mese jo minimum hoga uska sath hume replace karna hai isliye jo minimum hoga uska index hai minIndex, And initially jo root ka index hai wahi minIndex rahega
 		int leftChildIndex = 1; // left= 2*i+1 (i=0) //root ke dono childrens ke index nikalenge taki unko root ke sath compare kar paye.
@@ -93,7 +93,7 @@ public class Priority_Queue {
 			
 			//humare pas indexes aagye hai ab swapping kaneka kam karenge
 
-			if (minIndex == index) { //aisi bhi condtion hogi jisme aur swap karna hi na ho aur niche jana hi na ho means jab root ki priority already minimum hai meatalb jab index == minIndex hoga to hume ruk jana hai
+			if (minIndex == index) { //aisi bhi condition hogi jisme aur swap karna hi na ho aur niche jana hi na ho means jab root ki priority already minimum hai matalab jab index == minIndex hoga to hume ruk jana hai
 				break;
 			} else {
 
