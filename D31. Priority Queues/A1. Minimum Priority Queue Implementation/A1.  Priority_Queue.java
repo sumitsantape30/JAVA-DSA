@@ -31,7 +31,7 @@ public class Priority_Queue {
 	
 	
 	//insert karneka first step is hum jis element ko inset karna hai usko heap(arralist) ke sabse last mai add karenge. Insert karne ke bad heap order property bhi ensure karna hai iskliye jis element ko insert kiye uske parent ke sath compare karo
-	void insert(int element) { //input will be the element which we have to inset
+	void insert(int element) { //input will be the element which we have to insert
 		heap.add(element);// jo element heap mai insert karna hai woh arraylist ke last mai add hota hai
 
 		//after adding we need to perform the steps for upward heapify
