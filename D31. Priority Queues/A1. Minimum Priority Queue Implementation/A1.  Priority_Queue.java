@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 
 //Hum minimum heap keliye implement kar rhe hai
-//Iss priority_Qeueu class ko implment karne wale hai hum, iske liye muje heap, kyuki mai heap ko as a array store karunga to there's size constraint in arrays. So humare heap mai size constraint na aaye so there's option ki hum dynamic form of array use karenge and i.e. ArrayList.
+//Iss priority_Qeueu class ko implment karne wale hai hum, iske liye muje heap, kyuki mai heap ko as a array store karunga but there's size constraint in arrays. So humare heap mai size constraint na aaye so there's option ki hum dynamic form of array use karenge and i.e. ArrayList.
 public class Priority_Queue {
 
 	private ArrayList<Integer> heap; // meri heap arraylist ke form mai store hogi. And meri heap ke access kisiko na mile isliye private rakh rhe h, meri heap ka access bas isi class ke through milrha h
