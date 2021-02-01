@@ -61,7 +61,7 @@ public class InplaceHeapSort {
 		
 		int temp= arr[0]; // min wala remove hoga aur isko return bhi karna hai isliye temp mai dale
 		arr[0]= arr[heapSize -1];// last wale ko first pos pe leke aye
-		heapSize--; //last wala element ab starting mai aagya so last wale ko delete karne keliye heap ka size 1 se kam kr rhe. (purane isme arraylist pre remove() call karna padta tha)
+		heapSize--; //last wala element ab starting mai aagya so last wale ko delete karne keliye heap ka size 1 se kam kr rhe. (purane isme arraylist pe remove() call karna padta tha)
 		
 		int index=0; //jis index pe hume kam karna hai (abhi minIndex lene ki jarurat nhi hai, we can ignore it)
 		int leftChildIndex= 2*index +1; //iss index(just uparwala) ka left child ka index
