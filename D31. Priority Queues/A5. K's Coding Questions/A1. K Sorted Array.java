@@ -15,7 +15,7 @@ public static void sortKSorted(int arr[], int k) { //input will be an array and 
 			pq.add(arr[i]); 
 		}
 		
-		//K elements dal diye to un mese ek remove karenge woh i-k th position pe jana chahiye aur ek element add akrdenge khuki next time isko bhi consider karke firse minimum nikal rhe honge hum
+		//K elements dal diye to un mese ek remove karenge woh i-k th position pe jana chahiye aur ek element add krdenge kyuki next time isko bhi consider karke firse minimum nikal rhe honge hum
 		for( ; i< arr.length ;i++) {
 		    arr[i - k]= pq.remove(); // Jo element remove(minimum wale) hora woh array ke oth pe jayega
 		//priority queue mese ek remove karne ke bad muje K+1 pe jo pda usko add krna padega means arr[i] pe add karna padega coz i update hoke aya h
