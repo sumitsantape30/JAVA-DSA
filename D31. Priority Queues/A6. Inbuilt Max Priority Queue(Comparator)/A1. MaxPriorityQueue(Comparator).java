@@ -10,14 +10,14 @@ import java.util.PriorityQueue;
 //Max priority keliye comparator bana rhe hum, and it implements comparator interface
 class MinPQComparator implements Comparator<Integer>{ //humne yeh min comparator banaya
 	
-	//comparator ke andar niche wala ek simple sa compare to method hota hai, yeh compre to method decide krta hai ki hum do elements ko kaise compare karne wale hai
+	//comparator ke andar niche wala ek simple sa compare to method hota hai, yeh compare to method decide krta hai ki hum do elements ko kaise compare karne wale hai
 	@Override
 	public int compare(Integer o1, Integer o2) { //yeh compare to method ka result generally kuch -ve number, 0 , or +ve number hota hai. If they are equal we'll return  a 0, and -ve and +ve kab return karna hai yeh hum decide karre hote hai humare usecase ke according
 		
 		//existing comparator jo priority queue use kr rhi hai it works something like this
 		if(o1 < o2) {
 			return -1;
-		} else if(o1 > 02) {
+		} else if(o1 > o2) {
 			return 1;
 		}
 		//agar woh equal hai to return zero
@@ -34,7 +34,7 @@ class MaxPQComparator implements Comparator<Integer>{ //agar mai chahta hu ki me
 		
 		if(o1 < o2) {
 			return 1;
-		} else if(o1 > 02) {
+		} else if(o1 > o2) {
 			return -1;
 		}
 		return 0;
