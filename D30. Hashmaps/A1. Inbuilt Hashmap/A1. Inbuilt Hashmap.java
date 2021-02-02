@@ -3,7 +3,7 @@ import java.util.Set;
 
 public class MapsUse {
 
-	//Hashmap import karna padega and 
+	//Hashmap import karna padega  
 	public static void main(String[] args) {
 
 		//HashMap is generic on two things, key kaisi hogi and value kaisi hogi yeh hume dono chize btani hongi
