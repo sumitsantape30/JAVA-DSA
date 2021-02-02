@@ -48,3 +48,11 @@ public class StringPriorityQeueu {
 	}
 
 }
+
+Output:
+a
+at
+this
+qeueu
+their
+
