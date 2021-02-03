@@ -77,7 +77,7 @@ public class RatInAMazeQuestion {
 			//if this is true that means there exist a path, if doesn't that means we should go in left
 			//left: row number will reamin same and column number will decrease by 1
 			if(solveMaze( maze, i, j - 1, path )) { return true; }
-		    //if there exist the path then it's true else answer is false
+		        //if there exist the path then it's true else answer is false
 			return false;
 		}
 
