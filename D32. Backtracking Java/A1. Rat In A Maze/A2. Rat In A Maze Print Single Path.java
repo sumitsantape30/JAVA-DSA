@@ -18,7 +18,7 @@ public class ratInAMazePrintPath {
 			//Include the cell in current path 
 			path[i][j] = 1;
 			
-		        // thn hum check karenge ki kya hum destination pe pohoch gye agar hum destination pr pohoch gye hai to jo path matrix the usko print karenge just like we print 2D array
+		        // then hum check karenge ki kya hum destination pe pohoch gye agar hum destination pr pohoch gye hai to jo path matrix the usko print karenge just like we print 2D array aur sath me true return karenge
 			//There exist a path, this information we are able to get at this if statement. Yahase pta lag gya tha hume ki path milgya so we were returning true, means hum destination cell pe pohoch gye that means hume humara target mil chuka hai
 			//so agar hume path print bhi karana hai jo path hum path matrix mai maintain krte hue chal rhe hai, to woh printing ka kam bhi hum isi if statement mai karre honge jab hum destination tak pohoch chuke hai
 			//that means agar humara question hai print the path as so niche wala kam karenge
