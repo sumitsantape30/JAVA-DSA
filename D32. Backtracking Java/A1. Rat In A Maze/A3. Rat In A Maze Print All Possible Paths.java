@@ -132,7 +132,6 @@ public class ratInAMazePrintAllPath {
 			if( i == n-1 && j == n-1 ) {
 				for(int r=0; r< n; r++) {
 					for(int c=0; c< n; c++) {
-						
 						System.out.print( path[r][c]+" ");
 					}
 					System.out.println();
