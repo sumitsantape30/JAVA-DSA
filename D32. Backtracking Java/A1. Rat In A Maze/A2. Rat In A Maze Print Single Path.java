@@ -35,7 +35,7 @@ public class ratInAMazePrintPath {
 		   	
 			//Explore further in all direction
 			//top
-	      	if(solveMaze( maze, i - 1, j, path )) {
+	            	if(solveMaze( maze, i - 1, j, path )) {
 	      		return true;
 	      		}
 	      
