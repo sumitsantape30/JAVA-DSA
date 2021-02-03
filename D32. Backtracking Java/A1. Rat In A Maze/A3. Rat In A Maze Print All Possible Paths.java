@@ -145,7 +145,7 @@ public class ratInAMazePrintAllPath {
 				return ;
 			}
 		   	
-			//If I get true in one direction then I should not stop, Is should actually explore other directions as well, so woh call humne if condtion ke andar kiye the but ab muje koi condition nhi lagani coz 4 calls honge honge for sure
+			//If I get true in one direction then I should not stop, I should actually explore other directions as well, so woh call humne if condition ke andar kiye the but ab muje koi condition nhi lagani coz 4 calls honge honge for sure
 			//kyuki muje all possible paths chahiye to ek direction se answer milta bhi hai tobhi we have to explore other directions
 			//top
 			printAllPaths( maze, i - 1, j, path ); //agar path hogi to woh print kardega agar nhi hai to it will come back without printing anything.
