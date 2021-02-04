@@ -102,7 +102,7 @@ public class Trie {
 		}
 		
 		// hume "NOTE" insert karna tha to humne check kiya root ka koi 'N' nam ka child hai ya nhi then N ke corresponding Node banaya and root ke array mai use add kardiya yahatk humne 'N' insert kardiya ab 'N' ko apne andar "OTE" inn characters pe kam karna hai so hum recurion call karenge.
-		//yeh hone ke bad hume recursively call karna hai aage ke character add karne keliye and aage ke character hume main root node pe nhi dalne wale hum child(N) mai dalne hai so ab mera main root jo child tha woh banega. isliye as a root child ko pass karre taki woh main root ban ske that's why add(child, word.substring(1)) karenge and not add(word.substring(1)). And isiliye alaf add function banaya hai with argument root and word taki mai next time root change kr pau
+		//yeh hone ke bad hume recursively call karna hai aage ke character add karne keliye and aage ke character hume main root node pe nhi dalne wale hum child(N) mai dalne hai so ab mera main root jo child tha woh banega. isliye as a root child ko pass karre taki woh main root ban ske that's why add(child, word.substring(1)) karenge and not add(word.substring(1)). And isiliye alag add function banaya hai with argument root and word taki mai next time root change kr pau
 	     add(child, word.substring(1)); //recursion call on add 0th index ke aage se means 1 se and uske aage ka kam recursion karega.
 	}
 
