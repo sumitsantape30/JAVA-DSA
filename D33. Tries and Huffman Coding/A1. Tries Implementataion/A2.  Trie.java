@@ -1,6 +1,6 @@
 package CountWordInTrie;
 
-//agar muje Trie implement karna hai to Tree implement karna hai, to TrieClass ko apne pas pura tree rakhna hai, muje tree rakhna hai so muje tree ka root mil jaye to pura tree bhi mil jayega that mean Trie Class ke andar hum pure trie ka root rakhne wale hai. Trie ka root ke Trieode hai jiske chidren mai saare alphabets ke corresponding data stored hoga
+//agar muje Trie implement karna hai to Tree implement karna hai, to TrieClass ko apne pas pura tree rakhna hai, muje tree rakhna hai so muje tree ka root mil jaye to pura tree bhi mil jayega that mean Trie Class ke andar hum pure trie ka root rakhne wale hai. Trie ka root ke Trineode hai jiske chidren mai saare alphabets ke corresponding data store hoga
 //Root ka khudka data kuch nhi hai so root ko null character(\0) se initialise karenge
 //Study in this order: 1.add 2.search 3.remove
 public class Trie {
