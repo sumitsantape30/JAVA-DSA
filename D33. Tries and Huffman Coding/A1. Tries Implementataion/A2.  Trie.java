@@ -76,7 +76,7 @@ public class Trie {
 	//add karne ke kam hum recursively karenge 
 	//add karna hai to user se sirf word milega hume 
 	public void add(String word) {
-		//hume word insert karna hai so word ke corresponding hume check karna hai, suppose mai "NOTE" word insert kr rha hu, to root pe dhundunga "N" ke corresponding koi child hai ya nhi, root pe N ke corresponding koi child hai ya nhi yeh hume pta kaise chalega? Root ke pas apne children ka ek array hoga, usme N wale index pe(N ke corresponding jo index hai) wahape null pda hai ye not null hai, agar not null hai to child hai and null hai to child nhi hai
+		//hume word insert karna hai so word ke corresponding hume check karna hai, suppose mai "NOTE" word insert kr rha hu, to root pe dhundunga "N" ke corresponding koi child hai ya nhi, root pe N ke corresponding koi child hai ya nhi yeh hume pta kaise chalega? Root ke pas apne children ka ek array hoga, usme N wale index pe(N ke corresponding jo index hai) wahape null pda hai ya not null hai, agar not null hai to child hai and null hai to child nhi hai
 		//to isse pta chal jayega N ke corresponding koi child hai ya nhi
 		add(root, word);// *yeh alag se add function kyu banaya iska reason niche hai*
 	}
