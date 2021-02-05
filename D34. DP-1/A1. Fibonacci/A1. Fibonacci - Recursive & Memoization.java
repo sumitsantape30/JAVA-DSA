@@ -25,7 +25,7 @@ public class Fibonacci {
 	}
 
 	//this is Memoization technique, means hum memorise karre hai chizo ko
-	private static int fibM(int n, int storage[]) { //yahape jaise pehle recursively krte the bulikul waisehi karenge
+	private static int fibM(int n, int storage[]) { //yahape jaise pehle recursively krte the bilkul waisehi karenge
 		if( n==0 || n== 1) {
 			storage[n]=n; //basecase ke corresponding hum storage array mai n ki index pe n ki value store karenge and array return kar denge
 			return storage[n];
