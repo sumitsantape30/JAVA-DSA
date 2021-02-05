@@ -47,7 +47,7 @@ public class fibonacci2 {
 		// fibonacci series ka 0th 1th agya hai 2th calculate kr skte then 3 4..uss direction mai move karna hai isliye for loop lagayenge
 		for(int i = 2; i <= n ; i++) {
 			storage[i]= storage[i-1]+ storage[i-2];  //storage array ka ith cell ka result nikalna hai isliye storage array ke do cell piche walo ko add kar dena chahiye
-	    //array mai i-1 index pe i-1 fibonacci nuber and i-2 fibonacci number hoga so unko add krke next wala nikal rhe
+	    //array mai i-1 index pe i-1 fibonacci number and i-2 fibonacci number hoga so unko add krke next wala nikal rhe
 		}
 		
 		//jab pura kam hojaye to hum storage array mai n index pe jo value hai usko return kr denge means storage[n] return kardenge.
