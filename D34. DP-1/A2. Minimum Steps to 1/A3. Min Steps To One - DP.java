@@ -68,7 +68,7 @@ public class TakeNumberToOneDP {
 			 storage[i]= 1 + min;
 			 // storage ke woh index pe kitne steps hume lage uss index ko 1 tak pohochne mai woh store hoga, means har index pe uske corresponding number of steps store hongi
 		 }
-		 //humara targest n ko kitne steps lagte 1 tak pohochne mai yeh tha, so storage array ke n index pe jo value hogi woh humara answer hai
+		 //humara target n ko kitne steps lagte 1 tak pohochne mai yeh tha, so storage array ke n index pe jo value hogi woh humara answer hai
 		 return storage[n]; 
 	}
 
