@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class GraphBFS {
 	
-//BFS is similar to level order traversal in case of tree but hum recursion use nhi karenge , recusrion mai agar ek chiz pe call hui to woh pura apna kam khatam karke aata hai (recursion by default is depth first)	
+//BFS is similar to level order traversal in case of tree but hum recursion use nhi karenge , recursion mai agar ek chiz pe call hui to woh pura apna kam khatam karke aata hai (recursion by default is depth first)	
 // we'll be using Queue
 	public static void printHelper( int edges[][], int sv, boolean visited[]) {
 		 //Queue ka object banate hai and usme hum vertice means Integer store karne wale hai
