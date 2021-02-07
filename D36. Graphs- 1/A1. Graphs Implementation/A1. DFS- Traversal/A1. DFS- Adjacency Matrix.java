@@ -49,7 +49,7 @@ public class GraphDFS {
 			int sv= s.nextInt(); //second vertex/ending vertex of edge input lere
 			//and hum bolenge first vertex se second vertex ke bich mai edge hai
 			edges[fv][sv]= 1;
-			//and also we'll say ki second vertex se first verted ke bich mai bhi egde hai
+			//and also we'll say ki second vertex se first vertex ke bich mai bhi egde hai
 			edges[sv][fv]=1;
 		}//input lene keliye bas itna hi karna tha
 		
