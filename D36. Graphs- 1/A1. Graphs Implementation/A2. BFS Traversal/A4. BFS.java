@@ -48,7 +48,7 @@ public class GraphBFS {
 		
 		for (int i = 0; i < edges.length; i++) {
 			if (!visited[i]) {
-				printHelper(edges, 0, visited); 
+				printHelper(edges, i, visited); 
 			}
 		}
 		//agar yeh loop nhi lagaye to woh bas ek hi component ka print karega dusra component ignore kardega coz woh alag connected component hai
