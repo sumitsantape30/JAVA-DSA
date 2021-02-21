@@ -45,7 +45,7 @@ public class bubble_sort {
 
 	public static void bubbleSort(int input[]) { //input to the function will be array
 		
-		// n- 1 rounds karna padega for size n but i zero se start hora so length-2 lena padega
+		// n size keliye n- 1 rounds karna padega but i zero se start hora so length-1 lena padega
 		for (int i = 0; i < input.length - 1; i++) { // largest value of 'i' jiske liye yeh loop run krra hoga will be length-2
 			
 			//har round mai hum adjacent elements compare karre jarurat hai to swap karre ya fir aage move karre
