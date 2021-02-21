@@ -61,7 +61,7 @@ public class BinarySearch {
 			if( element == arr[mid]) { // jo element search karna hai usko mid index value ke sath compare karre agar dono same rhe to mid index return karenge
 				return mid;	
 			
-			}if( element > arr[mid]) {  //if element that we have to is greater than the element at the mid, then we should move towards right of the mid
+			}if( element > arr[mid]) {  //if element that we have to find is greater than the element at the mid, then we should move towards right of the mid
 					start= mid+1; //right mai jare matlab hume start index update krna padega and end wahi rahega.	
 				
 			}else if( element < arr[mid]) { // agar element chota hai than element at mid to left ke side jana padega and humara end mid se ek se kam hoga.
