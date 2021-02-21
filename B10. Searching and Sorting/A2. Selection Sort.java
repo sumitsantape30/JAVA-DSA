@@ -6,7 +6,7 @@ public class Selection_sort {
 	
 	public static void selectionSort(int input[]) { // array will be input
 		
-		// hume n-1 rounds karne hai to sort n elements
+		// n elements sort karne keliye n-1 rounds karne padenge as last wala apne aap sahi postion pe chala jayega
 		for (int i = 0; i < input.length - 1; i++) { // 0 to length - 2 (n-1 rounds), kyuki last wale element keliye koi operation nhi karna padega woh apne aap sahi position aajayega 
 			
 			//har round mai array mese minimum nikalna hai 
