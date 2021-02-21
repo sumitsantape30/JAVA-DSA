@@ -49,7 +49,7 @@ public class bubble_sort {
 		for (int i = 0; i < input.length - 1; i++) { // largest value of 'i' jiske liye yeh loop run krra hoga will be length-2
 			
 			//har round mai hum adjacent elements compare karre jarurat hai to swap karre ya fir aage move karre
-			for (int j = 0; j < input.length - i - 1; j++) { //for n element, n-2 is the last index jiska comparison hua 
+			for (int j = 0; j < input.length - i - 1; j++) { //for n element, n-2 is the last index jiska comparison hua,  
 				 
 				//Bada wala element sabse piche leke jana hota hai
 				if (input[j] > input[j + 1]) { // har round mai j and j+1 wale element ko compare karre honge agar yeh condition false hue to j ki value ek se increase hojayegi aur hum next two elements ko compare karre honge
