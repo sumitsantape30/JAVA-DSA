@@ -57,6 +57,7 @@ public class bubble_sort {
 					int temp = input[j];
 					input[j] = input[j + 1];
 					input[j + 1] = temp;
+					
 				}
 			}
 		}
