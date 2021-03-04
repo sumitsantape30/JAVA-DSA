@@ -42,7 +42,7 @@ public class Practice {
 		// 1 se leke 1 tak substring print karre to empty space dega
 		System.out.println(str.substring(1,1)); // Output:  (Empty Space)
 		
-    //str.conatains return true if the string contains that character sequence otherwise false return karega.
+                //str.conatains return true if the string contains that character sequence otherwise false return karega.
 		System.out.println(str.contains("abc")); //Output: true
 	}
 }
