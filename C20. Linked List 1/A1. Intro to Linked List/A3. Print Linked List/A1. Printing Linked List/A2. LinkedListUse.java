@@ -20,7 +20,7 @@ public class LinkedListUse {
         //last wale node ke next mai null hai means list khatam ho chuki hai so jabtak head null nhi hota tabtak travel karenge.
         while( head != null) {
         	System.out.print(head.data+" ");
-        	head= head.next;  //ek node ka data print karane ke bad muje had ko next node pe move karana hoga. starting mai head first node ko refer rha hai so uske pas first node ka address hoga, but next node print krne keliye head ko next node ko refer karna chahiye.
+        	head= head.next;  //ek node ka data print karane ke bad muje head ko next node pe move karana hoga. starting mai head first node ko refer rha hai so uske pas first node ka address hoga, but next node print krne keliye head ko next node ko refer karna chahiye.
         } 
         //head ek node ko point kr rha hai, us node ka data print karega, aage badh jao, head ko ek ek krke aage move kr rhe hai
 	    //Arrays mai ek step age badhne keliye i++ krte the yaha head= head.next krke le rhe honge.
