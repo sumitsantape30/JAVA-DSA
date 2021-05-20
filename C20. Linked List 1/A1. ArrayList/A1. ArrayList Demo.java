@@ -1,6 +1,6 @@
 package ArrayList;
 
-import java.util.ArrayList;
+import java.util.ArrayList; // remeber sagrs, s: size, a: add, g: get, r:remove, s: set
 
 //1. ArrayList is the class which behaves similar to that Dynamic Array Class, pehle se size batane ki jarurat nhi hai, tum dalte jaoge woh apne aap ko grow krta jayega. apne aap ko uske according adjust krta jayega.
 // 2. ArrayList generic hai
