@@ -15,10 +15,10 @@ public class DataType {
 //		char abc = i; // You are trying to copy 4bytes into 2bytes so it will give a error
 		
 		long l = i;
-		//i = l; // You are trying to copy 8bytes into 2bytes so it will give a error
+		//i = l; // You are trying to copy 8bytes into 4bytes so it will give a error
 		
 		double d = i;
-		//i = d; // You are trying to copy 8bytes into 2bytes so it will give a error
+		//i = d; // You are trying to copy 8bytes into 4bytes so it will give a error
 		
 		float f = 1.23f;
 		//f = d; // You are trying to copy 8bytes into 4bytes so it will give a error 
