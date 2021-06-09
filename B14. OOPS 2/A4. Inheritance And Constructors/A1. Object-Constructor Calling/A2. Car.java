@@ -10,7 +10,7 @@ public class Car extends Vehicle {
 		// but agar humne Vehicle class mai agar default constructor de diya to iss super(100) ki koi jarurat nhi hai
 		this.numGears= numGears;
 		System.out.println("Car Constructor");
-	}
+	} // hum iss car ke constuctor sebhi maxSpeed ko input le skte hai aur uske super mai pass kr skte hai. Firs iss car class ka object banate time bhi hume maxSpeed number mai pass karni hogi
 	
 	public void print() { 
 		super.print(); 
