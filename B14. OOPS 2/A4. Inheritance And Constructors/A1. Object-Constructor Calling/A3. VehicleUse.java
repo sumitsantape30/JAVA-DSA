@@ -14,6 +14,9 @@ public class VehicleUse {
     	//                 Car Constructor
         
        
+//so keep in mind, jab derived class ka constrcutor call hota hai to super class kabhi consturctor call hota hai, pehle super class ka hota hai then derived class ka. 
+// second thing is, agar default constructor hai to thik hai agar default constructor nhi hai to tumhe specifically constructor call karna padega super keyword use krke. ANd constructor ke andar aatehi yeh line sabse pehle honi chahiye
+		
 	}
 
 }
