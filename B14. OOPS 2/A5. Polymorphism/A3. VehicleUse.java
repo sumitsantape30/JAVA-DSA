@@ -12,11 +12,13 @@ public class VehicleUse {
 		Vehicle v= new Car(100); //that vehicle can be a car
 		
 		//v.isConvertible(); = can't call isConvertible, coz only thing compiler knows is 'v' is a vehicle, it's going to point towards vehicle but every vehicle doesn't have isConvertible function only car has it.
-		//isConvertible sirf car ke pas hai Vehicle ke pas nhi hai so erroe ayega.
+		//isConvertible sirf car ke pas hai Vehicle ke pas nhi hai so error ayega.
+		// v. means it's able to access the functionalities of the vehicle only
 		
 		// hum sirf vehicle specific chize kr skte hai, subclass specific chize nhi kr skte
 		v.print(); // this works, coz vehicle class has a print funtion but 'Car' wala 'print' function run hoga aur agar car print() function nhi hai to woh khudka run karega.(car ka print pehle Vehicle ka print() run karra * bsdk Car class open krke dekh*)
 		//car ka print() function call hua coz 'Car' type ka object tha (Vehicle V= new Car(100))
+		// so dono ke pas print function tha so call karne mai problem nhi tha, agar car ke pass print nhi hota to woh vehicle wala call krta coz uske pas to tha hi print function
 
 Output:
 Vehicle Constructor
