@@ -29,7 +29,7 @@ numGears : 100
 isConvertible : false
 
 //=================================================================================================================================================================================================================================================================
-		
+	// its abvious as well ki hum Vehicle pe isInvertible call nhi kr skte, see below	
 	//Taking an 'n' input from the user.
 		Scanner s= new Scanner(System.in);
 		int n= s.nextInt();
